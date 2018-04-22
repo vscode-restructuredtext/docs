@@ -22,7 +22,7 @@ Both features require Python and a few modules to be installed properly.
 
 Install Python, Sphinx, and Others
 ----------------------------------
-#. [Download python](https://www.python.org/downloads/) version 3.4 or above
+#. `Download python <https://www.python.org/downloads/>`_ version 3.4 or above
    (2.x might work, but no guarantee).
 
 #. If you are installing on Windows, ensure both the Python install directory
