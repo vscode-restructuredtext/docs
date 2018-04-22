@@ -69,7 +69,7 @@ Sphinx! The following features should be highlighted:"
 come from the power and straightforwardness of reStructuredText and its
 parsing and translating suite, the Docutils."
 
-.. note:: Documentation hosting sites such as `ReadTheDocs <https://readthedocs.org/>`_ help make Sphinx popular.
+.. note:: Hosting sites such as `ReadTheDocs <https://readthedocs.org/>`_ help make Sphinx popular.
 
 What is Visual Studio Code?
 ---------------------------

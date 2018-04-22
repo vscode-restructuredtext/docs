@@ -1,5 +1,8 @@
 Troubleshooting Guide
 =====================
+
+By `Lex Li`_
+
 If any error happens, please follow the steps below to locate the possible
 causes.
 

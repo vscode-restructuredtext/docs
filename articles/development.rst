@@ -1,6 +1,8 @@
 Working with the code base
 ==========================
 
+By `Lex Li`_
+
 Build from source
 -----------------
 #. Clone the repo to a local path such as ``~/vscode-restructuredtext`` .

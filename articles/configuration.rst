@@ -1,6 +1,8 @@
 Configuration
 =============
 
+By `Lex Li`_
+
 Live Preview and Linter
 -----------------------
 

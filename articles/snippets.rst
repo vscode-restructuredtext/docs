@@ -1,5 +1,8 @@
 Code Snippets
 =============
+
+By `Lex Li`_
+
 The following snippet names are supported,
 
 - ``code``  			Code block

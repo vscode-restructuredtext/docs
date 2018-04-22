@@ -1,5 +1,8 @@
 Section Builder
 ===============
+
+By `Lex Li`_
+
 The shortcut is ``ctrl+k ctrl+=`` (on Mac ``cmd+k cmd+=``).
 
 Pressing the shortcut key would convert the current line under the cursor to

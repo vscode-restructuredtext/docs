@@ -10,4 +10,5 @@ Articles
    snippets
    development
    troubleshooting
+   history
    thirdparties

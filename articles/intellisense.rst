@@ -2,6 +2,8 @@ IntelliSense
 ============
 This feature is disabled by default, as it is still experimental.
 
+By `Lex Li`_
+
 Settings
 --------
 To enable it at directory level, a new file ``.vscode/settings.json`` needs to
