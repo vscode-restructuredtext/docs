@@ -10,3 +10,4 @@ Articles
    snippets
    development
    troubleshooting
+   thirdparties
