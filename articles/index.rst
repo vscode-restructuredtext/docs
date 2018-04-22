@@ -6,5 +6,7 @@ Articles
 
    configuration
    intellisense
+   section
+   snippets
    development
    troubleshooting

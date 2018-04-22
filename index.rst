@@ -8,6 +8,11 @@
 reStructuredText Extension for Visual Studio Code
 =================================================
 
+.. toctree::
+    :titlesonly:
+
+    articles/index
+
 What is reStructuredText?
 -------------------------
 Below is the definition quoted from `the Docutils homepage <http://docutils.sourceforge.net/rst.html>`_ .
@@ -115,6 +120,7 @@ include with releases of this project.
 
 Acknowledgements
 ----------------
+
 Logo
 ^^^^
 The project logo comes from `Legendora Icon <http://raindropmemory.deviantart.com/art/Legendora-Icon-Set-118999011>`_
