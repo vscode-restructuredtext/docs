@@ -1,5 +1,5 @@
-Working with the code base
-==========================
+Hacking the Source Code
+=======================
 
 By `Lex Li`_
 
