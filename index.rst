@@ -15,7 +15,7 @@ reStructuredText Extension for Visual Studio Code
 
 What is reStructuredText?
 -------------------------
-Below is the definition quoted from `the Docutils homepage <http://docutils.sourceforge.net/rst.html>`_ .
+Below is the definition quoted from `the Docutils homepage <http://docutils.sourceforge.net/rst.html>`_.
 
 "reStructuredText is an easy-to-read, what-you-see-is-what-you-get plaintext
 markup syntax and parser system. It is useful for in-line program
@@ -34,13 +34,13 @@ useful structured data formats."
 .. image:: _static/rst.png
 
 .. note:: Though Markdown has now become almost the standard of documentation markup,
-   reStructuredText still has its own terrirtories.
+   reStructuredText still has its own territory.
 
    You can find a lot of information about reStructuredText from Docutils.
 
 What is Sphinx?
 ---------------
-Below is the definition quoted from `the Sphinx homepage <http://www.sphinx-doc.org/en/master/>`_ .
+Below is the definition quoted from `the Sphinx homepage <http://www.sphinx-doc.org/en/master/>`_.
 
 "Sphinx is a tool that makes it easy to create intelligent and beautiful
 documentation, written by Georg Brandl and licensed under the BSD license."
@@ -75,7 +75,7 @@ What is Visual Studio Code?
 ---------------------------
 `Visual Studio Code <https://code.visualstudio.com/>`_ is a free and open source code editor from Microsoft.
 
-According to various surveys such as `Stack Overflow Developer Survey <https://insights.stackoverflow.com/survey/2018/#development-environments-and-tools>`_ ,
+According to various surveys such as `Stack Overflow Developer Survey <https://insights.stackoverflow.com/survey/2018/#development-environments-and-tools>`_,
 Visual Studio Code is now the most popular editor around the world.
 
 OK, what is this extension?
@@ -103,14 +103,13 @@ Install it from `Visual Studio Code Marketplace <https://marketplace.visualstudi
 
 Configuration system is documented in :doc:`/articles/configuration`.
 
-Frequent Asked Questions can be found `here <https://github.com/vscode-restructuredtext/vscode-restructuredtext/issues?q=is%3Aissue+label%3A%22faq+candidate%22+>`_ .
+Frequent Asked Questions can be found `here <https://github.com/vscode-restructuredtext/vscode-restructuredtext/issues?q=is%3Aissue+label%3A%22faq+candidate%22+>`_.
 
 Contributing to the code
 ------------------------
-Check out :doc:`/articles/development` for more details on how to contribute
-to this extension!
+Check out :doc:`/articles/development` for more details on how to contribute to this extension!
 
-Check the `dashboard on work items <https://waffle.io/vscode-restructuredtext/vscode-restructuredtext>`_ .
+Check the `dashboard on work items <https://waffle.io/vscode-restructuredtext/vscode-restructuredtext>`_.
 
 License
 -------
@@ -124,17 +123,17 @@ Acknowledgements
 Logo
 ^^^^
 The project logo comes from `Legendora Icon <http://raindropmemory.deviantart.com/art/Legendora-Icon-Set-118999011>`_
-by `Teekatas Suwannakrua <http://raindropmemory.deviantart.com/>`_ .
+by `Teekatas Suwannakrua <http://raindropmemory.deviantart.com/>`_.
 
 Linter
 ^^^^^^
-The linter support is based on `Cody Hoover's ruby-linter <https://marketplace.visualstudio.com/items?itemName=hoovercj.ruby-linter>`_ .
+The linter support is based on `Cody Hoover's ruby-linter <https://marketplace.visualstudio.com/items?itemName=hoovercj.ruby-linter>`_.
 
 Live Preview
 ^^^^^^^^^^^^
-The initial idea was brought from `Thomas Haakon Townsend's ReStructured Text Previewer <https://marketplace.visualstudio.com/items?itemName=tht13.rst-vscode>`_ ,
+The initial idea was brought from `Thomas Haakon Townsend's ReStructured Text Previewer <https://marketplace.visualstudio.com/items?itemName=tht13.rst-vscode>`_,
 but soon after moving fully to Sphinx, this extension becomes its own beast.
 
 IntelliSense
 ^^^^^^^^^^^^
-The IntelliSense support is provided by the new `reStructuredText Language Server <https://github.com/lextm/restructuredtext-antlr>`_ .
+The IntelliSense support is provided by the new `reStructuredText Language Server <https://github.com/lextm/restructuredtext-antlr>`_.
