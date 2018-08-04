@@ -20,6 +20,7 @@ import shlex
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('_ext'))
 
 # -- General configuration ------------------------------------------------
 
@@ -30,7 +31,8 @@ import shlex
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.intersphinx'
+    'sphinx.ext.intersphinx',
+    'edit_on_github'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -381,3 +383,15 @@ epub_exclude_files = ['search.html']
 #    'mvc': ('http://docs.asp.net/projects/mvc/en/latest', 'mvc.inv'),
 #    'dotnet': ('http://dotnet.readthedocs.org/en/latest', 'dotnet.inv')
 #}
+if not on_rtd:
+    edit_on_github_project = 'lextm/restructuredtext'
+    edit_on_github_branch = 'master'
+
+def setup(app):
+    on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+    if not on_rtd:
+        """Insert Google Analytics tracker
+        Based on this Stackoverflow suggestion: https://stackoverflow.com/a/41885884
+        """
+        app.add_javascript("https://www.googletagmanager.com/gtag/js?id=UA-1962620-23")
+        app.add_javascript("google_analytics_tracker.js")
