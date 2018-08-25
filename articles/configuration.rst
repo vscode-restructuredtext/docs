@@ -31,6 +31,10 @@ Install Python, Sphinx, and Others
    ``c:\python34`` directory, you can add ``c:\python34;c:\python34\scripts``
    to your ``PATH`` environment variable.
 
+   .. important:: It is recommended that you install `the Python extension by
+      Microsoft
+      <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_.
+
 #. Install Sphinx by opening a command prompt and running the following Python
 command.
 
@@ -47,7 +51,8 @@ command.
       pip install doc8
 
 .. note:: Latest steps on how to install Python and sphinx, please refer to
-   `this article <https://docs.readthedocs.io/en/latest/getting_started.html#in-rst>`_ .
+   `this article
+   <https://docs.readthedocs.io/en/latest/getting_started.html#in-rst>`_ .
 
 Sample Project
 --------------
@@ -65,8 +70,19 @@ can better understand why the below settings are required.
 
 Now this project is opened in Visual Studio Code.
 
-You can preview ``.rst`` files as ``conf.py`` is at the root folder, and the
-default HTML output folder is ``_build/html``.
+By triggering a preview, this extension shows a list of options,
+
+.. image:: _static/selection.png
+
+Once an option is chosen, this extension is going to render the preview page
+accordingly.
+
+A status bar item is also added,
+
+.. image:: _static/reset.png
+
+By clicking this item, the selected option is reset, and the option list is
+displayed once again.
 
 Linter Settings
 ---------------
@@ -138,6 +154,8 @@ A file with customized values might look as below,
 
 Conf.py Path
 ::::::::::::
+.. important:: For release 67.0.0 and above, this option should not be used.
+
 This extension relies on sphinx ``conf.py`` to perform compilation.
 
 Usually when a sphinx project is opened, ``conf.py`` is located at the root in
