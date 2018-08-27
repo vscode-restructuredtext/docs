@@ -34,6 +34,7 @@ Install Python, Sphinx, and Others
    .. important:: It is recommended that you install `the Python extension by
       Microsoft
       <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_.
+      It really makes configuring Python environment easier for users.
 
 #. Install Sphinx by opening a command prompt and running the following Python
 command.
@@ -50,7 +51,7 @@ command.
 
       pip install doc8
 
-.. note:: Latest steps on how to install Python and sphinx, please refer to
+.. note:: Latest steps on how to install Python and Sphinx, please refer to
    `this article
    <https://docs.readthedocs.io/en/latest/getting_started.html#in-rst>`_ .
 
@@ -154,11 +155,25 @@ A file with customized values might look as below,
 
 Conf.py Path
 ::::::::::::
-.. important:: For release 67.0.0 and above, this option should not be used.
+.. important:: For release 68.0.0 and above, this option is maintained
+   automatically by the extension in most cases, so you don't need to modify it
+   unless really neccessary.
 
-This extension relies on sphinx ``conf.py`` to perform compilation.
+   The meaning of this setting also changes. Now it stores the active preview
+   option for the workspace/folder.
 
-Usually when a sphinx project is opened, ``conf.py`` is located at the root in
+   * If it is ``""``, then ``rst2html.py`` is used to render the preview page.
+   * If it is a valid folder, then ``conf.py`` from that folder is used by
+     Sphinx to render the preview page.
+   * If it is not set, then this extension shows a list of options before
+     generating a preview page.
+
+   It is not recommended to use ``rst2html.py``, as it does not work on Sphinx
+   specific features, and the preview pages can look differently.
+
+This extension relies on Sphinx ``conf.py`` to generate preview pages.
+
+Usually when a Sphinx project is opened, ``conf.py`` is located at the root in
 Explorer folder, and that's the default value ``${workspaceRoot}`` of
 ``restructuredtext.confPath``.
 
