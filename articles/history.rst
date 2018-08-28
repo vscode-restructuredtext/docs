@@ -24,6 +24,10 @@ Section builder was contributed by Adrien Di Mascio in release 44.0.0 [5]_ .
 A language server project was started recently [6]_ to enable IntelliSense.
 IntelliSense was included in release 47.0.0, and was disabled by default.
 
+Tormod Landet introduced many important pieces in June/July 2018, which boost
+productivity and simplified user experience [7]_ . The changes were shipped in
+release 67.0.0 and above.
+
 .. rubric:: Footnotes
 
 .. [1] https://en.wikipedia.org/wiki/Visual_Studio_Code
@@ -32,6 +36,7 @@ IntelliSense was included in release 47.0.0, and was disabled by default.
 .. [4] https://marketplace.visualstudio.com/items?itemName=hoovercj.ruby-linter
 .. [5] https://github.com/vscode-restructuredtext/vscode-restructuredtext/pull/66
 .. [6] https://github.com/lextm/restructuredtext-antlr
+.. [7] https://blog.lextudio.com/important-update-on-restructuredtext-for-vscode-efa0d412422f
 
 Related Resources
 -----------------
