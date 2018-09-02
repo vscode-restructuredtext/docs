@@ -12,6 +12,7 @@ reStructuredText Extension for Visual Studio Code
     :titlesonly:
 
     articles/index
+    Support Services <http://support.lextudio.com>
 
 What is reStructuredText?
 -------------------------
