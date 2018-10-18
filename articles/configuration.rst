@@ -177,11 +177,14 @@ Usually when a Sphinx project is opened, ``conf.py`` is located at the root in
 Explorer folder, and that's the default value ``${workspaceRoot}`` of
 ``restructuredtext.confPath``.
 
-If you have ``conf.py`` at another location, then please set
-``restructuredtext.confPath`` to the proper path, such as
+If you have ``conf.py`` at another location, then ``restructuredtext.confPath``
+should point to the proper path, such as
 ``${workspaceRoot}/source``.
 
 .. note:: This should be an absolute path.
+
+.. important:: For release 68.0.0 and above, the ``conf.py`` file must be
+   located within the root folder.
 
 Sphinx Build Path (25.0 and above)
 ::::::::::::::::::::::::::::::::::
