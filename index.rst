@@ -16,7 +16,7 @@ This extension enables reStructuredText related features in Visual Studio Code,
 * Linter
 * IntelliSense
 
-.. image:: _static/vscode.png
+.. image:: _static/main.gif
 
 Getting Started
 ---------------
