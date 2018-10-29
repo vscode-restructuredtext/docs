@@ -87,7 +87,7 @@ displayed once again.
 
 Linter Settings
 ---------------
-The linter support wraps ``doc8``.
+The linter support is based on ``doc8``.
 
 Executable Path
 :::::::::::::::

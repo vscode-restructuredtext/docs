@@ -10,5 +10,6 @@ Articles
    snippets
    development
    troubleshooting
+   background
    history
    thirdparties
