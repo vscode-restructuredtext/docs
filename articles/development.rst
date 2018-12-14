@@ -34,3 +34,10 @@ To publish this extension, use `vsce <https://code.visualstudio.com/docs/tools/v
     git clone https://github.com/vscode-restructuredtext/vscode-restructuredtext.git
     cd ~/vscode-restructuredtext
     vsce publish
+
+Related Resources
+-----------------
+
+- :doc:`/articles/configuration`
+- :doc:`/articles/shortcuts`
+- :doc:`/articles/troubleshooting`

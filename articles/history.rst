@@ -42,5 +42,5 @@ Related Resources
 -----------------
 
 - :doc:`/articles/configuration`
-- :doc:`/articles/intellisense`
-- :doc:`/articles/section`
+- :doc:`/articles/shortcuts`
+- :doc:`/articles/troubleshooting`

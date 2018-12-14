@@ -1,9 +1,7 @@
 {
-    "restructuredtext.builtDocumentationPath" : "${workspaceRoot}/_build/html",
-    "restructuredtext.confPath" : "${workspaceRoot}",
-    "restructuredtext.updateOnTextChanged" : "true",
+    "restructuredtext.confPath": "${workspaceFolder}",
     "editor.rulers": [
         79
     ],
-    "python.pythonPath": "/usr/local/opt/python/bin/python3.7"
+    "python.pythonPath": "/usr/local/bin/python3"
 }

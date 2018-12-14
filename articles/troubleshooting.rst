@@ -34,3 +34,10 @@ certain HTML page, then the make process might generate them at another
 location. You have to set ``restructuredtext.builtDocumentationPath``.
 
 .. note:: This should be an absolute path.
+
+Related Resources
+-----------------
+
+- :doc:`/articles/configuration`
+- :doc:`/articles/shortcuts`
+- :doc:`/articles/prerequisites`

@@ -3,64 +3,12 @@ Configuration
 
 By `Lex Li`_
 
-Live Preview and Linter
------------------------
-
-The Live Preview shortcuts are
-
-* ``ctrl+shift+r`` (on Mac ``cmd+shift+r``)               Preview
-* ``ctrl+k ctrl+r`` (on Mac ``cmd+k cmd+r``)              Preview to Side
-
-Linting is automatically enabled if the linter ``doc8`` is installed. The
-linter scans the opened files and highlights those lines with issues
-detected. The PROBLEMS tab should also show all issues detected for easy
-navigation.
-
-.. note:: A warning is displayed if ``doc8`` cannot be found.
-
-Both features require Python and a few modules to be installed properly.
-
-Install Python, Sphinx, and Others
-----------------------------------
-#. `Download python <https://www.python.org/downloads/>`_ version 3.4 or above
-   (2.x might work, but no guarantee).
-
-#. If you are installing on Windows, ensure both the Python install directory
-   and the Python scripts directory have been added to your ``PATH``
-   environment variable. For example, if you install Python into the
-   ``c:\python34`` directory, you can add ``c:\python34;c:\python34\scripts``
-   to your ``PATH`` environment variable.
-
-   .. important:: It is recommended that you install `the Python extension by
-      Microsoft
-      <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_.
-      It really makes configuring Python environment easier for users.
-
-#. Install Sphinx by opening a command prompt and running the following Python
-command.
-
-   .. note:: This operation might take a few minutes to complete.
-
-   .. code-block:: text
-
-      pip install sphinx sphinx-autobuild
-
-#. Install ``doc8`` to enable linter support.
-
-   .. code-block:: text
-
-      pip install doc8
-
-.. note:: Latest steps on how to install Python and Sphinx, please refer to
-   `this article
-   <https://docs.readthedocs.io/en/latest/getting_started.html#in-rst>`_ .
+This article shows how to configure the extension.
 
 Sample Project
 --------------
-
-Generate a sample project to test out this extension. The test project has the
-following contents, like ``makefile``, ``conf.py``, and build folder. Then you
-can better understand why the below settings are required.
+Before digging further into the configuration, please create a sample project
+first.
 
 .. code-block:: text
 
@@ -69,9 +17,34 @@ can better understand why the below settings are required.
     sphinx-quickstart
     code .
 
+The test project has the following contents, like ``makefile``, ``conf.py``,
+and build folder.
+
 Now this project is opened in Visual Studio Code.
 
-By triggering a preview, this extension shows a list of options,
+.. important:: You also need to install prerequisites. Please refer to
+   :doc:`/articles/prerequisites` for details.
+
+.. important:: If Microsoft Python extension is installed, please first open
+   ``conf.py`` of your project. The Python extension should ask you to specify
+   the Python build to use (in case your machine has multiple Python builds
+   installed). Your preference is saved to ``.vscode/settings.json`` file, and
+   is then used by this extension.
+
+   If you didn't make a choice, this extension might not be able to use the
+   Python build you expected.
+
+Live Preview
+------------
+The keyboard shortcuts are
+
+* ``ctrl+shift+r`` (on Mac ``cmd+shift+r``)               Preview
+* ``ctrl+k ctrl+r`` (on Mac ``cmd+k cmd+r``)              Preview to Side
+
+.. note:: To learn all keyboard shortcuts of this extension, please refer to
+   :doc:`/articles/shortcuts`.
+
+By triggering a preview, this extension might show a list of options,
 
 .. image:: _static/selection.png
 
@@ -85,44 +58,8 @@ A status bar item is also added,
 By clicking this item, the selected option is reset, and the option list is
 displayed once again.
 
-Linter Settings
----------------
-The linter support is based on ``doc8``.
-
-Executable Path
-:::::::::::::::
-It expects ``doc8`` Python module to be installed and already added to the
-path. If it is installed but cannot be found, add the path to your
-preferences as seen below,
-
-.. code-block:: json
-
-    {
-        "restructuredtext.linter.executablePath": "PathToExecutable"
-    }
-
-.. note:: This should be an absolute path.
-   If you don't set this setting, but ``python.pythonPath``, then this extension
-   will then pick up that setting instead. Also ``python.pythonPath`` should be
-   an absolute path.
-
-Lint onType or onSave or not at all
-:::::::::::::::::::::::::::::::::::
-By default the linter will lint on the fly but can be changed to linting as
-you save. Note that linting on save is most useful when auto-save is on. Use
-the setting below if to change the behavior with the values onType, onSave,
-and off,
-
-.. code-block:: json
-
-    {
-        "restructuredtext.linter.run": "onType"
-    }
-
-Live Preview Settings
----------------------
-You might need to set three settings so as to let this extension locate the
-generated HTML pages in some cases.
+You might tune the following three settings when the extension cannot locate
+the generated HTML pages.
 
 First, a new file ``.vscode/settings.json`` needs to be created under the root
 directory shown in your Explorer tab in Visual Studio Code.
@@ -162,13 +99,13 @@ Conf.py Path
    The meaning of this setting also changes. Now it stores the active preview
    option for the workspace/folder.
 
-   * If it is ``""``, then ``rst2html.py`` is used to render the preview page.
+   * If it is ``""``, then docutils is used to render the preview page.
    * If it is a valid folder, then ``conf.py`` from that folder is used by
      Sphinx to render the preview page.
    * If it is not set, then this extension shows a list of options before
      generating a preview page.
 
-   It is not recommended to use ``rst2html.py``, as it does not work on Sphinx
+   It is not recommended to use docutils, as it does not work on Sphinx
    specific features, and the preview pages can look differently.
 
 This extension relies on Sphinx ``conf.py`` to generate preview pages.
@@ -199,3 +136,83 @@ proper ``sphinx-build.exe`` file path.
    If you don't set this setting, but ``python.pythonPath``, then this extension
    will then pick up that setting instead. Also ``python.pythonPath`` should be
    an absolute path.
+
+Linter
+------
+The linter support is based on ``doc8``.
+
+Linting is automatically enabled if the linter ``doc8`` is installed. The
+linter scans the opened files and highlights those lines with issues
+detected. The PROBLEMS tab should also show all issues detected for easy
+navigation.
+
+.. note:: A warning is displayed if ``doc8`` cannot be found.
+
+Executable Path
+:::::::::::::::
+It expects ``doc8`` Python module to be installed and already added to the
+path. If it is installed but cannot be found, add the path to your
+preferences as seen below,
+
+.. code-block:: json
+
+    {
+        "restructuredtext.linter.executablePath": "PathToExecutable"
+    }
+
+.. note:: This should be an absolute path.
+   If you don't set this setting, but ``python.pythonPath``, then this extension
+   will then pick up that setting instead. Also ``python.pythonPath`` should be
+   an absolute path.
+
+Lint onType or onSave or not at all
+:::::::::::::::::::::::::::::::::::
+By default the linter will lint on the fly but can be changed to linting as
+you save. Note that linting on save is most useful when auto-save is on. Use
+the setting below if to change the behavior with the values onType, onSave,
+and off,
+
+.. code-block:: json
+
+    {
+        "restructuredtext.linter.run": "onType"
+    }
+
+IntelliSense
+------------
+This feature is disabled by default, as it is still experimental.
+
+To enable it at directory level, a new file ``.vscode/settings.json`` needs to
+be created under the root directory shown in your Explorer tab in Visual
+Studio Code.
+
+Its default content is as below,
+
+.. code-block:: json
+
+    {
+        "restructuredtext.languageServer.disabled": true
+    }
+
+To enable IntelliSense, change the value to ``false``,
+
+.. code-block:: json
+
+    {
+        "restructuredtext.languageServer.disabled": false
+    }
+
+You need to restart Visual Studio Code for this change to take effect.
+
+.. note:: You can also enable it at machine level, by making this change in
+   ``Preferences -> Settings``.
+
+Once configured properly, suggestions would be provided when pressing ``/``
+after lines such as ``- :doc:`` to help input file path much quicker.
+
+Related Resources
+-----------------
+
+- :doc:`/articles/prerequisites`
+- :doc:`/articles/shortcuts`
+- :doc:`/articles/troubleshooting`
