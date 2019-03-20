@@ -35,7 +35,7 @@ features,
     :titlesonly:
 
     articles/index
-    Support Services <http://support.lextudio.com>
+    Support Services <https://support.lextudio.com>
 
 Frequent Asked Questions can be found `here <https://github.com/vscode-restructuredtext/vscode-restructuredtext/issues?q=is%3Aissue+label%3A%22faq+candidate%22+>`_.
 

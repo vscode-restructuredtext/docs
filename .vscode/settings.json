@@ -2,6 +2,5 @@
     "restructuredtext.confPath": "${workspaceFolder}",
     "editor.rulers": [
         79
-    ],
-    "python.pythonPath": "/usr/local/bin/python3"
+    ]
 }
