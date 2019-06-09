@@ -16,6 +16,12 @@ Find The Logs
 The logs show what compiler command line is used by this extension and which
 HTML is being previewed. They should indicate what might be wrong.
 
+Use Developer Tools
+-------------------
+In rare cases you need to use ``Help | Toggle Developer Tools`` menu item to
+enable Visual Studio Code's hidden Console tab. Then when you reproduce a
+certain issue, you can see relevant errors recorded.
+
 Locate The Conf.py Folder
 -------------------------
 #. Open Integrated Terminal in Visual Studio Code code by clicking "View |
