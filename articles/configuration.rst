@@ -178,6 +178,22 @@ and off,
         "restructuredtext.linter.run": "onType"
     }
 
+Linter Settings
+:::::::::::::::
+You can configure ``doc8`` `using an ini file <https://github.com/openstack/doc8#ini-file-usage>`_.
+Specify the location of the ini file in ``settings.json`` as extra args.
+
+.. code-block:: json
+
+    {
+      "restructuredtext.linter.extraArgs": [
+        "--config",
+        "${workspaceFolder}/doc8.ini"
+      ]
+    }
+
+.. note:: This should be an absolute path.
+
 IntelliSense
 ------------
 This feature is disabled by default, as it is still experimental.
