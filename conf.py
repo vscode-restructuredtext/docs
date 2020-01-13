@@ -31,8 +31,7 @@ sys.path.insert(0, os.path.abspath('_ext'))
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.intersphinx',
-    'edit_on_github'
+    'sphinx.ext.intersphinx'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -383,9 +382,6 @@ epub_exclude_files = ['search.html']
 #    'mvc': ('http://docs.asp.net/projects/mvc/en/latest', 'mvc.inv'),
 #    'dotnet': ('http://dotnet.readthedocs.org/en/latest', 'dotnet.inv')
 #}
-if not on_rtd:
-    edit_on_github_project = 'lextm/restructuredtext'
-    edit_on_github_branch = 'master'
 
 def setup(app):
     on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
