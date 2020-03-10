@@ -27,8 +27,8 @@ advance.
 .. important:: Python virtualenv is supported, but its setup is complex and not
    documented here yet.
 
-Install DocUtils or Sphinx for Live Preview
--------------------------------------------
+Install DocUtils or Sphinx as Live Previewer
+--------------------------------------------
 Live preview requires either DocUtils or Sphinx to be installed in advance, as
 rendering engine to generate the HTML page for preview. The selection of
 rendering engine and Sphinx ``conf.py`` files can be made by clicking the
@@ -59,9 +59,9 @@ command,
           know which packages to install, or the preview error page contains
           the actual package name which is missing.
 
-Install Doc8 as Linter
------------------------
-Linting support can use the doc8 engine.
+Install Doc8 or RstCheck as Linter
+----------------------------------
+Linting support can use the doc8 or rstcheck engine.
 
 #. Install ``doc8`` to enable linter support.
 
@@ -69,11 +69,7 @@ Linting support can use the doc8 engine.
 
       pip install doc8
 
-   .. note:: If you prefer not to use linter, then this step is optional.
-
-Install RstCheck as Linter
------------------------
-Linting support can use the rstcheck engine.
+   .. note:: If you prefer not to use doc8, then this step is optional.
 
 #. Install ``rstcheck`` to enable linter support.
 
@@ -81,7 +77,7 @@ Linting support can use the rstcheck engine.
 
       pip install rstcheck
 
-   .. note:: If you prefer not to use linter, then this step is optional.
+   .. note:: If you prefer not to use rstcheck, then this step is optional.
 
 Related Resources
 -----------------
