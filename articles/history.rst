@@ -16,8 +16,9 @@ feature was added in release 0.0.7, and fully switched to Sphinx based preview
 engine in release 0.0.14.
 
 Linter support was added in release 33.0.0, by reusing some code from Cody
-Hoover's ruby-linter extension [4]_ . restructured-linter was chosen initially,
-and later doc8 support was added in release 53.0.0.
+Hoover's ruby-linter extension [4]_ . restructured-lint was chosen initially,
+and later doc8 support was added in release 53.0.0. Recently rstcheck has been
+chosen to replace doc8 in release 120.0.0.
 
 Section builder was contributed by Adrien Di Mascio in release 44.0.0 [5]_ .
 
@@ -28,6 +29,10 @@ Tormod Landet introduced many important pieces in June/July 2018, which boost
 productivity and simplified user experience [7]_ . The changes were shipped in
 release 67.0.0 and above.
 
+noisnemid added initial outline support [8]_ in release 118.0.0.
+
+There are other contributors helping out with bug reports and pull requests.
+
 .. rubric:: Footnotes
 
 .. [1] https://en.wikipedia.org/wiki/Visual_Studio_Code
@@ -37,6 +42,7 @@ release 67.0.0 and above.
 .. [5] https://github.com/vscode-restructuredtext/vscode-restructuredtext/pull/66
 .. [6] https://github.com/lextm/restructuredtext-antlr
 .. [7] https://blog.lextudio.com/important-update-on-restructuredtext-for-vscode-efa0d412422f
+.. [8] https://github.com/vscode-restructuredtext/vscode-restructuredtext/pull/199
 
 Related Resources
 -----------------

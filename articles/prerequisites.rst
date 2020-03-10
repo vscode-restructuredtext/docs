@@ -59,15 +59,27 @@ command,
           know which packages to install, or the preview error page contains
           the actual package name which is missing.
 
-Install Doc8 for Linter
+Install Doc8 as Linter
 -----------------------
-Linting support requires the doc8 engine.
+Linting support can use the doc8 engine.
 
 #. Install ``doc8`` to enable linter support.
 
    .. code-block:: text
 
       pip install doc8
+
+   .. note:: If you prefer not to use linter, then this step is optional.
+
+Install RstCheck as Linter
+-----------------------
+Linting support can use the rstcheck engine.
+
+#. Install ``rstcheck`` to enable linter support.
+
+   .. code-block:: text
+
+      pip install rstcheck
 
    .. note:: If you prefer not to use linter, then this step is optional.
 

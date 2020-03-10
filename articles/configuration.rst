@@ -139,20 +139,20 @@ proper ``sphinx-build.exe`` file path.
 
 Linter
 ------
-The linter support is based on ``doc8``.
+The linter support is based on ``rstcheck`` and ``doc8``.
 
-Linting is automatically enabled if the linter ``doc8`` is installed. The
-linter scans the opened files and highlights those lines with issues
-detected. The PROBLEMS tab should also show all issues detected for easy
+Linting is automatically enabled if the linter ``rstcheck`` or ``doc8`` is
+installed. The linter scans the opened files and highlights those lines with
+issues detected. The PROBLEMS tab should also show all issues detected for easy
 navigation.
 
-.. note:: A warning is displayed if ``doc8`` cannot be found.
+.. note:: A warning is displayed if ``rstcheck`` or ``doc8`` cannot be found.
 
 Executable Path
 :::::::::::::::
-It expects ``doc8`` Python module to be installed and already added to the
-path. If it is installed but cannot be found, add the path to your
-preferences as seen below,
+It expects ``rstcheck`` or ``doc8`` Python module to be installed and already
+added to the system path. If it is installed but not added to system path, add
+the path to your preferences as seen below,
 
 .. code-block:: json
 
@@ -161,9 +161,9 @@ preferences as seen below,
     }
 
 .. note:: This should be an absolute path.
-   If you don't set this setting, but ``python.pythonPath``, then this extension
-   will then pick up that setting instead. Also ``python.pythonPath`` should be
-   an absolute path.
+   If you don't set this setting, but set ``python.pythonPath`` separately,
+   then this extension will then pick up that setting instead. Also
+   ``python.pythonPath`` should be an absolute path.
 
 Lint onType or onSave or not at all
 :::::::::::::::::::::::::::::::::::
@@ -178,8 +178,12 @@ and off,
         "restructuredtext.linter.run": "onType"
     }
 
-Linter Settings
-:::::::::::::::
+Linter rstchck Settings
+:::::::::::::::::::::::
+To be added.
+
+Linter doc8 Settings
+::::::::::::::::::::
 You can configure ``doc8`` `using an ini file <https://github.com/openstack/doc8#ini-file-usage>`_.
 Specify the location of the ini file in ``settings.json`` as extra args.
 
