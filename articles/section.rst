@@ -12,8 +12,12 @@ such as '=', '-', ':', '.', '\'', '"', '~', '^', '*', '+', and '#'.
 
 The keyboard shortcuts are,
 
-* ``ctrl+k ctrl+=`` (on Mac ``cmd+k cmd+=``)
-* ``ctrl+k ctrl+-`` (on Mac ``cmd+k cmd+-``) (in reverse order, 78.0.0+)
+=========================== ================= ===============
+Operation                   Windows/Linux     macOS
+=========================== ================= ===============
+Insert Adornment            ``ctrl+k ctrl+=`` ``cmd+k cmd+=``
+Insert Adornment (Reversed) ``ctrl+k ctrl+-`` ``cmd+k cmd+-``
+=========================== ================= ===============
 
 .. note:: To learn all keyboard shortcuts of this extension, please refer to
    :doc:`/articles/shortcuts`.

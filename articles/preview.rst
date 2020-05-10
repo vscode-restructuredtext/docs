@@ -9,8 +9,12 @@ Shorcuts
 --------
 The keyboard shortcuts are
 
-* ``ctrl+shift+r`` (on Mac ``cmd+shift+r``)               Preview
-* ``ctrl+k ctrl+r`` (on Mac ``cmd+k cmd+r``)              Preview to Side
+=========================== ================= ===============
+Operation                   Windows/Linux     macOS
+=========================== ================= ===============
+Preview                     ``ctrl+shift+r``  ``cmd+shift+r``
+Preview to Side             ``ctrl+k ctrl+r`` ``cmd+k cmd+r``
+=========================== ================= ===============
 
 .. note:: To learn all keyboard shortcuts of this extension, please refer to
    :doc:`/articles/shortcuts`.
@@ -48,6 +52,16 @@ project (based on ``conf.py``) to a website. Therefore, if this engine is used,
 * All Sphinx syntax and even extensions work flawlessly.
 
 To learn more about the settings, refer to :doc:`/articles/configuration`.
+
+.. note:: If a large project is being worked on, the very first preview might
+   take a long time to show, because the first call to Sphinx takes time to
+   generate all HTML pages for all source files.
+
+   The subsequent preview pages should be much quicker to show, as those calls
+   to Sphinx only generate the pages that were modified.
+
+   More information can be found in
+   `this issue <https://github.com/vscode-restructuredtext/vscode-restructuredtext/issues/211>`_ .
 
 Related Resources
 -----------------
