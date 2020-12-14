@@ -224,9 +224,9 @@ To enable IntelliSense, change the value to ``false``,
 
 You need to restart Visual Studio Code for this change to take effect.
 
-> The Snooty language server requires the Python package `snooty` to be
-  installed. If it isn't installed yet, this extension will prompt and guide
-  you through the installation.
+.. important:: The Snooty language server requires the Python package `snooty`
+   to be installed. If it isn't installed yet, this extension will prompt and
+   guide you through the installation.
 
 .. note:: You can also enable it at machine level, by making this change in
    ``Preferences -> Settings``.
