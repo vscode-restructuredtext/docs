@@ -234,7 +234,7 @@ You need to restart Visual Studio Code for this change to take effect.
 Once configured properly, certain language server features will be activated.
 
 * The legacy language server provides file path suggestions when pressing ``/``
-after lines such as ``- :doc:`` to help speed up input file references.
+  after lines such as ``- :doc:`` to help speed up input file references.
 * The Snooty language server implements a different set of features.
 
 Related Resources
