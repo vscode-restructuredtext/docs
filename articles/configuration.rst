@@ -224,18 +224,14 @@ To enable IntelliSense, change the value to ``false``,
 
 You need to restart Visual Studio Code for this change to take effect.
 
-.. important:: The Snooty language server requires the Python package `snooty`
-   to be installed. If it isn't installed yet, this extension will prompt and
-   guide you through the installation.
+.. important:: The Snooty language server requires the Python package
+   ``snooty-lextudio`` to be installed. If it isn't installed yet, this
+   extension will prompt and guide you through the installation.
 
 .. note:: You can also enable it at machine level, by making this change in
    ``Preferences -> Settings``.
 
 Once configured properly, certain language server features will be activated.
-
-* The legacy language server provides file path suggestions when pressing ``/``
-  after lines such as ``- :doc:`` to help speed up input file references.
-* The Snooty language server implements a different set of features.
 
 Related Resources
 -----------------
