@@ -233,6 +233,19 @@ You need to restart Visual Studio Code for this change to take effect.
 
 Once configured properly, certain language server features will be activated.
 
+Security
+--------
+This extension runs a few third-party command-line tools found from the
+locations determined by the settings such as "restructuredtext.sphinxBuildPath"
+or "restructuredtext.linter.executablePath". Configuring them in workspace
+settings allows users to conveniently select a different set of tools based on
+project's need, but also allows attackers to run arbitrary binaries on your
+machine if they successfuly convince you to open a random repository. In order
+to reduce the security risk, the extension reads those settings from user
+settings by default. If the repository can be trusted and workspace settings
+must be used, you can mark the workspace as a trusted workspace using the
+"reStructuredText: Toggle Workspace Trust Flag" command.
+
 Related Resources
 -----------------
 
