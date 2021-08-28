@@ -31,14 +31,26 @@ The license terms can be found at
 
 https://github.com/hoovercj/vscode-ruby-linter/blob/master/LICENSE.txt
 
-C# for Visual Studio Code (powered by OmniSharp)
-
-The license terms can be found at
-
-https://github.com/OmniSharp/omnisharp-vscode/blob/master/LICENSE.txt
-
 Visual Studio Code
 
 The license terms can be found at
 
 https://github.com/Microsoft/vscode/blob/master/LICENSE.txt
+
+vscode-markdown
+
+The license terms can be found at
+
+https://github.com/yzhang-gh/vscode-markdown/blob/master/LICENSE
+
+vscode-rst
+
+The license terms can be found at
+
+https://github.com/trond-snekvik/vscode-rst/blob/main/LICENSE.txt
+
+resttext
+
+The license terms can be found at
+
+https://github.com/TatsuyaNakamori/vscode-reStructuredText/blob/master/LICENSE

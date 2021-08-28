@@ -12,7 +12,7 @@ This extension enables reStructuredText related features in Visual Studio Code,
 * Syntax Highlighting
 * Code Snippets
 * Live Preview
-* Section Builder
+* Editor Enhancement
 * Linter
 * IntelliSense
 
