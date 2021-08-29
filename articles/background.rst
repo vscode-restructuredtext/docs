@@ -22,6 +22,7 @@ purpose of the markup is the conversion of reStructuredText documents into
 useful structured data formats."
 
 .. image:: _static/rst.png
+  :alt: reStructuredText logo
 
 .. note:: Though Markdown has now become almost the standard of documentation 
    markup, reStructuredText still has its own territory.

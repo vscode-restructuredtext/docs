@@ -9,14 +9,17 @@ reStructuredText Extension for Visual Studio Code
 =================================================
 This extension enables reStructuredText related features in Visual Studio Code,
 
-* Syntax Highlighting
 * Code Snippets
 * Live Preview
 * Editor Enhancement
 * Linter
 * IntelliSense
 
+.. note:: To get Syntax Highlighting, please also install `this extension <https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst>`_
+   by Trond Snekvik.
+
 .. image:: _static/main.gif
+   :alt: screenshot
 
 Getting Started
 ---------------

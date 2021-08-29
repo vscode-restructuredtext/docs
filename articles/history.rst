@@ -31,6 +31,21 @@ release 67.0.0 and above.
 
 noisnemid added initial outline support [8]_ in release 118.0.0.
 
+A new linter named rstcheck [9]_ was integrated in release 120.0.0 and became
+the default.
+
+Starting from release 131.0.0, the Snooty language server created by MongoDB
+[10]_ was integrated. The legacy server was removed in release 137.0.0.
+
+List editing was ported from Yu Zhang's extension [11]_ in release 143.0.0.
+
+Table editor was ported from Tatsuya Nakamori's extension [12]_ in release
+158.0.0.
+
+Starting from release 154.0.0 this extension switched to the syntax
+highlighting implemented by Trond Snekvik. Release 159.0.0 completely removed
+syntax highlighiting and recommends Trond's extension [13]_ instead.
+
 There are other contributors helping out with bug reports and pull requests.
 
 .. rubric:: Footnotes
@@ -43,6 +58,11 @@ There are other contributors helping out with bug reports and pull requests.
 .. [6] https://github.com/lextm/restructuredtext-antlr
 .. [7] https://blog.lextudio.com/important-update-on-restructuredtext-for-vscode-efa0d412422f
 .. [8] https://github.com/vscode-restructuredtext/vscode-restructuredtext/pull/199
+.. [9] https://github.com/myint/rstcheck
+.. [10] https://github.com/vscode-restructuredtext/snooty-parser
+.. [11] https://github.com/yzhang-gh/vscode-markdown
+.. [12] https://github.com/TatsuyaNakamori/vscode-reStructuredText
+.. [13] https://github.com/trond-snekvik/vscode-rst
 
 Related Resources
 -----------------
