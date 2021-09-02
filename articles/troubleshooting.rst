@@ -6,11 +6,12 @@ By `Lex Li`_
 If any error happens, please follow the steps below to locate the possible
 causes.
 
-Reboot the computer and try again
----------------------------------
+Reboot The Computer
+-------------------
 
-In some rare cases, Visual Studio Code background processes can be left behind. These
-background processes are involved in tasks such as rendering HTML preview.
+In some cases (though rarely), Visual Studio Code background processes can be
+left behind. These background processes are involved in tasks such as
+rendering HTML preview.
 
 Find The Logs
 -------------
