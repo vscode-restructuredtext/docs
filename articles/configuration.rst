@@ -200,9 +200,9 @@ Specify the location of the ini file in ``settings.json`` as extra args.
 
 IntelliSense
 ------------
-This feature is disabled by default, as it is still experimental.
+This feature is enabled by default, but it is still experimental.
 
-To enable it at directory level, a new file ``.vscode/settings.json`` needs to
+To enable/disable it at directory level, a new file ``.vscode/settings.json`` needs to
 be created under the root directory shown in your Explorer tab in Visual
 Studio Code.
 
@@ -211,15 +211,15 @@ Its default content is as below,
 .. code-block:: json
 
     {
-        "restructuredtext.languageServer.disabled": true
+        "restructuredtext.languageServer.disabled": false
     }
 
-To enable IntelliSense, change the value to ``false``,
+To disable IntelliSense, change the value to ``true``,
 
 .. code-block:: json
 
     {
-        "restructuredtext.languageServer.disabled": false
+        "restructuredtext.languageServer.disabled": true
     }
 
 You need to restart Visual Studio Code for this change to take effect.
