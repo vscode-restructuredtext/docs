@@ -27,15 +27,22 @@ Now this project is opened in Visual Studio Code.
 
 .. important:: If Microsoft Python extension is installed, please first open
    ``conf.py`` of your project. The Python extension should ask you to specify
-   the Python build to use (in case your machine has multiple Python builds
-   installed). Your preference is saved to ``.vscode/settings.json`` file, and
-   is then used by this extension.
+   the Python interpreter to use (in case the machine has multiple interpreters
+   installed). Your preference is saved by the Python extension, and is then
+   used by this extension.
 
    If you didn't make a choice, this extension might not be able to use the
    Python build you expected.
 
 Live Preview
 ------------
+
+.. warning:: Esbonio language server must be enabled for live preview to work
+   properly.
+
+   If live preview does not work, verify if "esbonio: idle" is visible in the
+   status bar. Read "IntelliSense" section for more details.
+
 The keyboard shortcuts are
 
 * ``ctrl+shift+r`` (on Mac ``cmd+shift+r``)               Preview
@@ -73,7 +80,7 @@ Its default content is as below,
         "restructuredtext.confPath"               : "${workspaceRoot}",
         "restructuredtext.updateOnTextChanged"    : "true",
         "restructuredtext.updateDelay"            : 300,
-        "restructuredtext.sphinxBuildPath"        : null
+        "restructuredtext.sourcePath"             : null
     }
 
 .. note:: All settings are set to the default values.
@@ -87,7 +94,7 @@ A file with customized values might look as below,
         "restructuredtext.confPath"               : "${workspaceRoot}/source",
         "restructuredtext.updateOnTextChanged"    : "false",
         "restructuredtext.updateDelay"            : 1000,
-        "restructuredtext.sphinxBuildPath"        : "C:\\Users\\lextm\\AppData\\Local\\Programs\\Python\\Python36\\Scripts\\sphinx-build.exe"
+        "restructuredtext.sourcePath"             : "${workspaceRoot}"
     }
 
 Conf.py Path
@@ -123,19 +130,49 @@ should point to the proper path, such as
 .. important:: For release 68.0.0 and above, the ``conf.py`` file must be
    located within the root folder.
 
-Sphinx Build Path (25.0 and above)
+Source Path (172.0.0 and above)
 ::::::::::::::::::::::::::::::::::
-The value for ``restructuredtext.sphinxBuildPath`` above depends on your Python
-installation.
-
-On Windows Python can be installed to all possible locations and does not
-appear in ``PATH`` environment variable. Then you must set this value to the
-proper ``sphinx-build.exe`` file path.
+The value for ``restructuredtext.sourcePath`` is only useful when the root
+directory of source files does not match ``restructuredtext.confPath``.
 
 .. note:: This should be an absolute path.
-   If you don't set this setting, but ``python.pythonPath``, then this extension
-   will then pick up that setting instead. Also ``python.pythonPath`` should be
-   an absolute path.
+   If you don't set this setting, the value of ``restructuredtext.confPath`` is
+   used instead.
+
+IntelliSense
+------------
+This feature is enabled by default, though it is still experimental.
+
+To enable/disable it at directory level, a new file ``.vscode/settings.json``
+needs to be created under the root directory shown in your Explorer tab in
+Visual Studio Code.
+
+Its default content is as below,
+
+.. code-block:: json
+
+    {
+        "restructuredtext.languageServer.disabled": false
+    }
+
+To disable IntelliSense, change the value to ``true``,
+
+.. code-block:: json
+
+    {
+        "restructuredtext.languageServer.disabled": true
+    }
+
+You need to restart Visual Studio Code for this change to take effect.
+
+.. important:: The Esbonio language server requires the Python package
+   ``esbonio`` to be installed. If it isn't installed yet, this
+   extension will prompt and guide you through the installation.
+
+.. note:: You can also enable it at machine level, by making this change in
+   ``Preferences -> Settings``.
+
+Once configured properly, IntelliSense and live preview will be activated.
 
 Linter
 ------
@@ -197,41 +234,6 @@ Specify the location of the ini file in ``settings.json`` as extra args.
     }
 
 .. note:: This should be an absolute path.
-
-IntelliSense
-------------
-This feature is enabled by default, but it is still experimental.
-
-To enable/disable it at directory level, a new file ``.vscode/settings.json`` needs to
-be created under the root directory shown in your Explorer tab in Visual
-Studio Code.
-
-Its default content is as below,
-
-.. code-block:: json
-
-    {
-        "restructuredtext.languageServer.disabled": false
-    }
-
-To disable IntelliSense, change the value to ``true``,
-
-.. code-block:: json
-
-    {
-        "restructuredtext.languageServer.disabled": true
-    }
-
-You need to restart Visual Studio Code for this change to take effect.
-
-.. important:: The Snooty language server requires the Python package
-   ``snooty-lextudio`` to be installed. If it isn't installed yet, this
-   extension will prompt and guide you through the installation.
-
-.. note:: You can also enable it at machine level, by making this change in
-   ``Preferences -> Settings``.
-
-Once configured properly, certain language server features will be activated.
 
 Security
 --------

@@ -20,52 +20,47 @@ advance.
 #. Once Python is installed, make it available to this extension via either
    option,
 
-   * Option 1: Add Python to system path.
+   * Option 1: Add Python to system path (especially on Windows).
 
      .. note:: If you are installing on Windows, ensure both the Python install
         directory and the Python scripts directory have been added to your
         ``PATH`` environment variable. For example, if you install Python into
-        the ``c:\python34`` directory, you can add
-        ``c:\python34;c:\python34\scripts`` to your ``PATH`` environment
+        the ``c:\python36`` directory, you can add
+        ``c:\python36;c:\python36\scripts`` to your ``PATH`` environment
         variable.
 
-   * Option 2: Use VSCode setting ``python.pythonPath`` to tell where to locate
-     Python.
+   * Option 2: Use `the Python extension by Microsoft <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_.
 
-     .. important:: It is recommended that you install
-        `the Python extension by Microsoft <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_.
-        It really makes configuring Python environment easier for users in this
-        approach.
+     .. note:: It really makes configuring Python environment easier for users
+        in this approach.
 
         Once you have that Python extension installed, open ``conf.py`` in
         VSCode. The Python extension shows an extra button in the status bar
         from where you can select which Python installation to use.
 
-.. important:: Python virtualenv is supported, but its setup is complex and not
-   documented here yet.
+   * Option 3: Use VSCode setting ``python.pythonPath`` to tell this extension
+     where to locate Python.
 
-Install DocUtils or Sphinx as Live Previewer
---------------------------------------------
-Live preview requires either DocUtils or Sphinx to be installed in advance, as
-rendering engine to generate the HTML page for preview. The selection of
-rendering engine and Sphinx ``conf.py`` files can be made by clicking the
-status button. Please refer to :doc:`/articles/configuration` for details.
+.. important:: Python virtualenv is partially supported, but its setup is
+   complex and not documented here yet. Many issues are expected.
 
-#. Install DocUtls by opening a command prompt and running the following Python
+Install Esbonio Language Server for Live Preview and IntelliSense
+-----------------------------------------------------------------
+
+Esbonio language server provides both IntelliSense and live preview
+functionalities, so it must be installed in advance, as
+rendering engine to generate the HTML page for preview.
+
+..note:: In case you really want to avoid Esbonio and Sphinx for live preview,
+  you can select DocUtils. Please refer to :doc:`/articles/configuration` for
+  details.
+
+#. Install Esbonio by opening a command prompt and running the following Python
    command,
 
    .. code-block:: text
 
-      pip install docutils
-
-   .. note:: If you prefer Sphinx based preview, then this step is optional.
-
-#. Install Sphinx by opening a command prompt and running the following Python
-   command,
-
-   .. code-block:: text
-
-      pip install sphinx sphinx-autobuild
+      pip install esbonio
 
    .. note:: This operation might take a few minutes to complete.
 
@@ -75,6 +70,15 @@ status button. Please refer to :doc:`/articles/configuration` for details.
       installed. You should check the documentation of the themes you use so as
       to know which packages to install, or the preview error page contains the
       actual package name which is missing.
+
+#. Install DocUtils by opening a command prompt and running the following Python
+   command,
+
+   .. code-block:: text
+
+      pip install docutils
+
+   .. note:: If you prefer Esbonio based preview, then this step is optional.
 
 Install Doc8 or RstCheck as Linter
 ----------------------------------

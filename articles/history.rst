@@ -42,9 +42,12 @@ List editing was ported from Yu Zhang's extension [11]_ in release 143.0.0.
 Table editor was ported from Tatsuya Nakamori's extension [12]_ in release
 158.0.0.
 
-Starting from release 154.0.0 this extension switched to the syntax
+Starting from release 154.0.0, this extension switched to the syntax
 highlighting implemented by Trond Snekvik. Release 159.0.0 completely removed
 syntax highlighiting and recommends Trond's extension [13]_ instead.
+
+Starting from release 170.0.0, the Esbonio language server created by Alex
+Carney [14]_ was integrated. The integration with Snooty was removed.
 
 There are other contributors helping out with bug reports and pull requests.
 
@@ -63,6 +66,7 @@ There are other contributors helping out with bug reports and pull requests.
 .. [11] https://github.com/yzhang-gh/vscode-markdown
 .. [12] https://github.com/TatsuyaNakamori/vscode-reStructuredText
 .. [13] https://github.com/trond-snekvik/vscode-rst
+.. [14] https://github.com/swyddfa/esbonio
 
 Related Resources
 -----------------
