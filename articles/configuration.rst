@@ -108,7 +108,7 @@ Conf.py Path
 
    * If it is ``""``, then docutils is used to render the preview page.
    * If it is a valid folder, then ``conf.py`` from that folder is used by
-     Sphinx to render the preview page.
+     Esbonio to render the preview page.
    * If it is not set, then this extension shows a list of options before
      generating a preview page.
 

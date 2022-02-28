@@ -65,11 +65,17 @@ parsing and translating suite, the Docutils."
 
 What is Visual Studio Code?
 ---------------------------
-`Visual Studio Code <https://code.visualstudio.com/>`_ is a free and open
-source code editor from Microsoft.
+`Visual Studio Code <https://code.visualstudio.com/>`_ (VSCode for short) is a
+free and open source code editor from Microsoft.
 
 According to various surveys such as `Stack Overflow Developer Survey <https://insights.stackoverflow.com/survey/2018/#development-environments-and-tools>`_,
 Visual Studio Code is now the most popular editor around the world.
+
+What is Esbonio?
+----------------
+Esbonio is a language server that builds upon Sphinx engine. It provides very
+important functionalities for VSCode extensions such as live preview and
+IntelliSense.
 
 Related Resources
 -----------------

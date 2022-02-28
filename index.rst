@@ -68,4 +68,4 @@ but soon after moving fully to Sphinx, this extension becomes its own beast.
 
 IntelliSense
 ^^^^^^^^^^^^
-The IntelliSense support is provided by the new `reStructuredText Language Server <https://github.com/lextm/restructuredtext-antlr>`_.
+The IntelliSense support is provided by the `Esbonio Language Server <https://github.com/swyddfa/esbonio>`_.

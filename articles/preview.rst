@@ -28,12 +28,12 @@ The compilation/rendering requires an engine, and currently two of them are
 supported,
 
 * DocUtils
-* Sphinx
+* Esbonio
 
 The choice decides the performance and quality of the preview page.
 
-DocUtils Engine
----------------
+DocUtils
+--------
 DocUtils implements the basic reStructuredText syntax, and it can render
 preview based on just a single page. Therefore, if this engine is used,
 
@@ -41,10 +41,11 @@ preview based on just a single page. Therefore, if this engine is used,
 * The preview page lacks of themes.
 * Certain Sphinx syntax is not rendered correctly.
 
-Sphinx
-------
-Sphinx implements its own syntax on top of DocUtils, and it compiles the whole
-project (based on ``conf.py``) to a website. Therefore, if this engine is used,
+Esbonio
+-------
+Esbonio is built upon Sphinx, which implements its own syntax on top of
+DocUtils, and it compiles the whole project (based on ``conf.py``) to a
+website. Therefore, if this engine is used,
 
 * The rendering speed can be slow.
 * The preview page contains themed elements, and matches the final result in
