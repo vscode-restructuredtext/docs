@@ -174,7 +174,7 @@ Linter
 The linter support is based on ``rstcheck``, ``doc8``, and ``rst-lint``.
 
 Linting is automatically enabled if the linters are installed. The linters
-scans the opened files and highlights those lines with issues detected. The
+scan the opened files and highlight those lines with issues detected. The
 PROBLEMS tab should also show all issues detected for easy navigation.
 
 Executable Path
@@ -190,10 +190,7 @@ be used,
         "restructuredtext.linter.rst-lint.executablePath": "PathToExecutable"
     }
 
-.. note:: The values should be an absolute path.
-   If you don't set this setting, but set ``python.pythonPath`` separately,
-   then this extension will then pick up that setting instead. Also
-   ``python.pythonPath`` should be an absolute path.
+.. note:: The values should be absolute paths.
 
 .. attention:: Linters can be disabled via the new setting,
    ``restructuredtext.linter.disabledLinters``.
