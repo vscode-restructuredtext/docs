@@ -29,18 +29,20 @@ Now this project is opened in Visual Studio Code.
    ``conf.py`` of your project. The Python extension should ask you to specify
    the Python interpreter to use (in case the machine has multiple interpreters
    installed). Your preference is saved by the Python extension, and is then
-   used by this extension.
+   consumed by this extension.
 
    If you didn't make a choice, this extension might not be able to use the
-   Python build you expected.
+   Python interpreter you expected.
+
+   For information, please refer to :doc:`/articles/prerequisites`.
 
 Live Preview
 ------------
 
 .. warning:: Esbonio language server must be enabled for live preview to work
-   properly.
+   properly since release 171.0.0.
 
-   If live preview does not work, verify if "esbonio: idle" is visible in the
+   If live preview does not work, verify if "esbonio:" is visible in the
    status bar. Read "IntelliSense" section for more details.
 
 The keyboard shortcuts are
@@ -76,10 +78,8 @@ Its default content is as below,
 .. code-block:: json
 
     {
-        "restructuredtext.builtDocumentationPath" : "${workspaceRoot}/_build/html",
-        "restructuredtext.confPath"               : "${workspaceRoot}",
-        "restructuredtext.updateOnTextChanged"    : "true",
-        "restructuredtext.updateDelay"            : 300,
+        "restructuredtext.builtDocumentationPath" : "${workspaceFolder}/_build/html",
+        "restructuredtext.confPath"               : "${workspaceFolder}",
         "restructuredtext.sourcePath"             : null
     }
 
@@ -90,11 +90,9 @@ A file with customized values might look as below,
 .. code-block:: json
 
     {
-        "restructuredtext.builtDocumentationPath" : "${workspaceRoot}/build/html",
-        "restructuredtext.confPath"               : "${workspaceRoot}/source",
-        "restructuredtext.updateOnTextChanged"    : "false",
-        "restructuredtext.updateDelay"            : 1000,
-        "restructuredtext.sourcePath"             : "${workspaceRoot}"
+        "restructuredtext.builtDocumentationPath" : "${workspaceFolder}/build/html",
+        "restructuredtext.confPath"               : "${workspaceFolder}/source",
+        "restructuredtext.sourcePath"             : "${workspaceFolder}"
     }
 
 Conf.py Path
@@ -112,23 +110,20 @@ Conf.py Path
    * If it is not set, then this extension shows a list of options before
      generating a preview page.
 
-   It is not recommended to use docutils, as it does not work on Sphinx
+   It is not recommended to use docutils, as it does not understand Sphinx
    specific features, and the preview pages can look differently.
 
 This extension relies on Sphinx ``conf.py`` to generate preview pages.
 
 Usually when a Sphinx project is opened, ``conf.py`` is located at the root in
-Explorer folder, and that's the default value ``${workspaceRoot}`` of
+Explorer folder, and that's the default value ``${workspaceFolder}`` of
 ``restructuredtext.confPath``.
 
 If you have ``conf.py`` at another location, then ``restructuredtext.confPath``
 should point to the proper path, such as
-``${workspaceRoot}/source``.
+``${workspaceFolder}/source``.
 
 .. note:: This should be an absolute path.
-
-.. important:: For release 68.0.0 and above, the ``conf.py`` file must be
-   located within the root folder.
 
 Source Path (172.0.0 and above)
 ::::::::::::::::::::::::::::::::::
@@ -165,42 +160,50 @@ To disable IntelliSense, change the value to ``true``,
 
 You need to restart Visual Studio Code for this change to take effect.
 
+.. note:: You can also enable it at machine level, by making this change in
+   ``Preferences -> Settings``.
+
 .. important:: The Esbonio language server requires the Python package
    ``esbonio`` to be installed. If it isn't installed yet, this
    extension will prompt and guide you through the installation.
 
-.. note:: You can also enable it at machine level, by making this change in
-   ``Preferences -> Settings``.
-
-Once configured properly, IntelliSense and live preview will be activated.
+Once configured properly, IntelliSense and live preview will both be enabled.
 
 Linter
 ------
-The linter support is based on ``rstcheck`` and ``doc8``.
+The linter support is based on ``rstcheck``, ``doc8``, and ``rst-lint``.
 
-Linting is automatically enabled if the linter ``rstcheck`` or ``doc8`` is
-installed. The linter scans the opened files and highlights those lines with
-issues detected. The PROBLEMS tab should also show all issues detected for easy
-navigation.
-
-.. note:: A warning is displayed if ``rstcheck`` or ``doc8`` cannot be found.
+Linting is automatically enabled if the linters are installed. The linters
+scans the opened files and highlights those lines with issues detected. The
+PROBLEMS tab should also show all issues detected for easy navigation.
 
 Executable Path
 :::::::::::::::
-It expects ``rstcheck`` or ``doc8`` Python module to be installed and already
-added to the system path. If it is installed but not added to system path, add
-the path to your preferences as seen below,
+To override automatic detection of linter modules, the following settings can
+be used,
 
 .. code-block:: json
 
     {
-        "restructuredtext.linter.executablePath": "PathToExecutable"
+        "restructuredtext.linter.doc8.executablePath": "PathToExecutable",
+        "restructuredtext.linter.rstcheck.executablePath": "PathToExecutable",
+        "restructuredtext.linter.rst-lint.executablePath": "PathToExecutable"
     }
 
-.. note:: This should be an absolute path.
+.. note:: The values should be an absolute path.
    If you don't set this setting, but set ``python.pythonPath`` separately,
    then this extension will then pick up that setting instead. Also
    ``python.pythonPath`` should be an absolute path.
+
+.. attention:: Linters can be disabled via the new setting,
+   ``restructuredtext.linter.disabledLinters``.
+
+.. attention:: Old settings below are obsolete,
+
+   * ``restructuredtext.linter.disabled``
+   * ``restructuredtext.linter.name``
+   * ``restructuredtext.linter.executablePath``
+   * ``restructuredtext.linter.extraArgs``
 
 Lint onType or onSave or not at all
 :::::::::::::::::::::::::::::::::::
