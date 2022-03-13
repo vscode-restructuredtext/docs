@@ -13,12 +13,6 @@ by implication, estoppel or otherwise.
 
 ---
 
-restructuredtext.tmbundle
-
-The license terms can be found at
-
-https://github.com/textmate/restructuredtext.tmbundle
-
 ReStructured Text Previewer
 
 The license terms can be found at
@@ -42,12 +36,6 @@ vscode-markdown
 The license terms can be found at
 
 https://github.com/yzhang-gh/vscode-markdown/blob/master/LICENSE
-
-vscode-rst
-
-The license terms can be found at
-
-https://github.com/trond-snekvik/vscode-rst/blob/main/LICENSE.txt
 
 resttext
 

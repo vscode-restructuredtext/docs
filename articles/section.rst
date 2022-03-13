@@ -41,8 +41,8 @@ extension, which provides the following functionalities,
 * Create formatted table from comma separated text.
 * Add/delete table row/column
 
-You can refer to this `article <https://tatsuyanakamori.github.io/vscode-reStructuredText/en/sec02_functions/table.html#creating-a-table
->`_ for more information.
+You can refer to this `article <https://tatsuyanakamori.github.io/vscode-reStructuredText/en/sec02_functions/table.html#creating-a-table>`_
+for more information.
 
 .. note:: To avoid conflicts with IntelliSense, the ported table editor uses a
    different approach to trigger empty table creation,

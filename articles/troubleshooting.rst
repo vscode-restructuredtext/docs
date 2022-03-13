@@ -40,7 +40,7 @@ Locate The Conf.py Folder
 Test The Generated HTML files
 -----------------------------
 When the make process succeeds, the generated HTML pages should present in
-``${workspaceRoot}/_build/html``.
+``${workspaceFolder}/_build/html``.
 
 If you cannot find this folder or the extension indicates it cannot find
 certain HTML page, then the make process might generate them at another

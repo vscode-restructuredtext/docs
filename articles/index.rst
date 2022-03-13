@@ -16,4 +16,5 @@ Articles
    troubleshooting
    background
    history
+   ecosystem
    thirdparties
