@@ -78,21 +78,29 @@ Its default content is as below,
 .. code-block:: json
 
     {
-        "restructuredtext.builtDocumentationPath" : "${workspaceFolder}/_build/html",
-        "restructuredtext.confPath"               : "${workspaceFolder}",
-        "restructuredtext.sourcePath"             : null
+        "esbonio.sphinx.buildDir" : "${workspaceFolder}/_build/html",
+        "esbonio.sphinx.confDir"  : "${workspaceFolder}",
+        "esbonio.sphinx.srcDir"   : "${workspaceFolder}"
     }
 
 .. note:: All settings are set to the default values.
+
+.. attention:: Old settings below are obsolete since release 179.0.0,
+
+   * ``restructuredtext.builtDocumentationPath``
+   * ``restructuredtext.confPath``
+   * ``restructuredtext.sourcePath``
+
+   This extension will migrate such settings when possible.
 
 A file with customized values might look as below,
 
 .. code-block:: json
 
     {
-        "restructuredtext.builtDocumentationPath" : "${workspaceFolder}/build/html",
-        "restructuredtext.confPath"               : "${workspaceFolder}/source",
-        "restructuredtext.sourcePath"             : "${workspaceFolder}"
+        "esbonio.sphinx.buildDir" : "${workspaceFolder}/build/html",
+        "esbonio.sphinx.confDir"  : "${workspaceFolder}/source",
+        "esbonio.sphinx.srcDir"   : "${workspaceFolder}"
     }
 
 Conf.py Path
@@ -117,57 +125,30 @@ This extension relies on Sphinx ``conf.py`` to generate preview pages.
 
 Usually when a Sphinx project is opened, ``conf.py`` is located at the root in
 Explorer folder, and that's the default value ``${workspaceFolder}`` of
-``restructuredtext.confPath``.
+``esbonio.sphinx.confDir``.
 
-If you have ``conf.py`` at another location, then ``restructuredtext.confPath``
-should point to the proper path, such as
-``${workspaceFolder}/source``.
+If you have ``conf.py`` at another location, then ``esbonio.sphinx.confDir``
+should point to the proper path, such as ``${workspaceFolder}/source``.
 
 .. note:: This should be an absolute path.
 
 Source Path (172.0.0 and above)
 ::::::::::::::::::::::::::::::::::
-The value for ``restructuredtext.sourcePath`` is only useful when the root
-directory of source files does not match ``restructuredtext.confPath``.
+The value for ``esbonio.sphinx.srcDir`` is only useful when the root directory
+of source files does not match ``esbonio.sphinx.confDir``.
 
 .. note:: This should be an absolute path.
-   If you don't set this setting, the value of ``restructuredtext.confPath`` is
+   If you don't set this setting, the value of ``esbonio.sphinx.confDir`` is
    used instead.
 
 IntelliSense
 ------------
-This feature is enabled by default, though it is still experimental.
-
-To enable/disable it at directory level, a new file ``.vscode/settings.json``
-needs to be created under the root directory shown in your Explorer tab in
-Visual Studio Code.
-
-Its default content is as below,
-
-.. code-block:: json
-
-    {
-        "restructuredtext.languageServer.disabled": false
-    }
-
-To disable IntelliSense, change the value to ``true``,
-
-.. code-block:: json
-
-    {
-        "restructuredtext.languageServer.disabled": true
-    }
-
-You need to restart Visual Studio Code for this change to take effect.
-
-.. note:: You can also enable it at machine level, by making this change in
-   ``Preferences -> Settings``.
+This feature is enabled by default, though it is still experimental. There is
+no way to disable it at this moment, as you will also lose live preview.
 
 .. important:: The Esbonio language server requires the Python package
    ``esbonio`` to be installed. If it isn't installed yet, this
    extension will prompt and guide you through the installation.
-
-Once configured properly, IntelliSense and live preview will both be enabled.
 
 Linter
 ------
@@ -195,7 +176,7 @@ be used,
 .. attention:: Linters can be disabled via the new setting,
    ``restructuredtext.linter.disabledLinters``.
 
-.. attention:: Old settings below are obsolete,
+.. attention:: Old settings below are obsolete since release 178.0.0,
 
    * ``restructuredtext.linter.disabled``
    * ``restructuredtext.linter.name``
@@ -238,8 +219,8 @@ Specify the location of the ini file in ``settings.json`` as extra args.
 Security
 --------
 This extension runs a few third-party command-line tools found from the
-locations determined by the settings such as "restructuredtext.sphinxBuildPath"
-or "restructuredtext.linter.executablePath". Configuring them in workspace
+locations determined by the settings such as
+``restructuredtext.linter.doc8.executablePath``. Configuring them in workspace
 settings allows users to conveniently select a different set of tools based on
 project's need, but also allows attackers to run arbitrary binaries on your
 machine if they successfuly convince you to open a random repository. In order
