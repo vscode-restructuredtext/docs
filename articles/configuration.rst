@@ -208,7 +208,7 @@ Specify the location of the ini file in ``settings.json`` as extra args.
 .. code-block:: json
 
     {
-      "restructuredtext.linter.extraArgs": [
+      "restructuredtext.linter.doc8.extraArgs": [
         "--config",
         "${workspaceFolder}/doc8.ini"
       ]

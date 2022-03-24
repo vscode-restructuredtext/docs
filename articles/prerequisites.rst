@@ -8,7 +8,7 @@ reStructuredText is a technology created by Python community, so most of the
 toolchain is built upon Python. It is very important to install Python in
 advance.
 
-#. `Download python <https://www.python.org/downloads/>`_ version 3.5 or above
+#. `Download python <https://www.python.org/downloads/>`_ version 3.6 or above
    (old versions might work, but no guarantee).
 
    .. note:: You can refer to `Python official page <https://devguide.python.org/devcycle/#end-of-life-branches>`_
