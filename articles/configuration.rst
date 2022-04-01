@@ -91,7 +91,8 @@ Its default content is as below,
    * ``restructuredtext.confPath``
    * ``restructuredtext.sourcePath``
 
-   This extension will migrate such settings when possible.
+   This extension will migrate the values of such settings to new settings.
+   You have to delete the obsolete settings afterwards. 
 
 A file with customized values might look as below,
 
