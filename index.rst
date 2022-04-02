@@ -44,7 +44,7 @@ Frequent Asked Questions can be found `here <https://github.com/vscode-restructu
 
 License
 -------
-This extension is licensed under the MIT License. 
+This extension is licensed under the MIT License.
 
 Please see :doc:`/articles/thirdparties` for details on the third-party files
 that we include with releases of this project.

@@ -5,7 +5,7 @@ By `Lex Li`_
 
 Build from source
 -----------------
-#. Clone the repo to a local path such as ``~/vscode-restructuredtext`` .
+#. Clone the repo to a local path such as ``~/vscode-restructuredtext``.
 #. Navigate to this folder.
 #. Resolve Node.js dependencies via ``yarn install`` .
 #. Build via ``yarn compile`` .

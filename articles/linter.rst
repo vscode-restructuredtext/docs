@@ -7,14 +7,20 @@ This article shows how the linter works.
 
 Overview
 --------
-Based on configuration, this extension launches linters in the background to
-scan the source files and reports back identified issues under ``PROBLEMs`` tab
-(can be opened via ``View | Problems`` menu item).
+This extension can detect and launch various linters in the background to scan
+the source files and report back common issues under ``PROBLEMS`` tab (which
+can be opened via ``View | Problems`` menu item).
 
+Settings
+--------
 To learn more about the settings, refer to :doc:`/articles/configuration`.
 
+Supported Linters
+-----------------
+Three linters are currently supported,
+
 rst-lint
---------
+::::::::
 This linter provides essential rules. To install it,
 
 .. code-block:: bash
@@ -22,7 +28,7 @@ This linter provides essential rules. To install it,
    pip install restructuredtext_lint
 
 doc8
-----
+::::
 This linter provides enhanced rules. To install it,
 
 .. code-block:: bash
@@ -32,7 +38,7 @@ This linter provides enhanced rules. To install it,
 .. note:: doc8 supersedes rst-lint, so rst-lint is disabled if doc8 is enabled.
 
 rstcheck
---------
+::::::::
 This linter provides enhanced rules. To install it,
 
 .. code-block:: bash

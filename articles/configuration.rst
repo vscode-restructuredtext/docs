@@ -38,35 +38,6 @@ Now this project is opened in Visual Studio Code.
 
 Live Preview
 ------------
-
-.. warning:: Esbonio language server must be enabled for live preview to work
-   properly since release 171.0.0.
-
-   If live preview does not work, verify if "esbonio:" is visible in the
-   status bar. Read "IntelliSense" section for more details.
-
-The keyboard shortcuts are
-
-* ``ctrl+shift+r`` (on Mac ``cmd+shift+r``)               Preview
-* ``ctrl+k ctrl+r`` (on Mac ``cmd+k cmd+r``)              Preview to Side
-
-.. note:: To learn all keyboard shortcuts of this extension, please refer to
-   :doc:`/articles/shortcuts`.
-
-By triggering a preview, this extension might show a list of options,
-
-.. image:: _static/selection.png
-
-Once an option is chosen, this extension is going to render the preview page
-accordingly.
-
-A status bar item is also added,
-
-.. image:: _static/reset.png
-
-By clicking this item, the selected option is reset, and the option list is
-displayed once again.
-
 You might tune the following three settings when the extension cannot locate
 the generated HTML pages.
 
@@ -141,15 +112,6 @@ of source files does not match ``esbonio.sphinx.confDir``.
 .. note:: This should be an absolute path.
    If you don't set this setting, the value of ``esbonio.sphinx.confDir`` is
    used instead.
-
-IntelliSense
-------------
-This feature is enabled by default, though it is still experimental. There is
-no way to disable it at this moment, as you will also lose live preview.
-
-.. important:: The Esbonio language server requires the Python package
-   ``esbonio`` to be installed. If it isn't installed yet, this
-   extension will prompt and guide you through the installation.
 
 Linter
 ------
