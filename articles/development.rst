@@ -5,7 +5,7 @@ By `Lex Li`_
 
 Build from source
 -----------------
-#. Clone the repo to a local path such as ``~/vscode-restructuredtext``.
+#. Clone the repo to a local path such as ``/Users/someuser/vscode-restructuredtext``.
 #. Navigate to this folder.
 #. Resolve Node.js dependencies via ``yarn install`` .
 #. Build via ``yarn compile`` .
@@ -15,9 +15,9 @@ Build from source
 
 .. code-block:: text
 
-    cd ~
+    cd /Users/someuser
     git clone https://github.com/vscode-restructuredtext/vscode-restructuredtext.git
-    cd ~/vscode-restructuredtext
+    cd vscode-restructuredtext
     yarn install
     yarn compile
     code .
@@ -53,7 +53,7 @@ debugging.
    5678. Connect and debug.`
 
 .. note:: If you want to debug initialization, then change `esbonio.server.debugLaunch`
-   to `true`/
+   to `true`.
 
 Then launch another VSCode instance and open esbonio source folder in it.
 
@@ -91,9 +91,9 @@ To publish this extension, use `vsce <https://code.visualstudio.com/docs/tools/v
 
 .. code-block:: text
 
-    cd ~
+    cd /Users/someuser
     git clone https://github.com/vscode-restructuredtext/vscode-restructuredtext.git
-    cd ~/vscode-restructuredtext
+    cd vscode-restructuredtext
     vsce publish
 
 Related Resources
