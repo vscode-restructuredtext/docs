@@ -51,9 +51,9 @@ Esbonio language server provides both IntelliSense and live preview
 functionalities, so it must be installed in advance, as
 rendering engine to generate the HTML page for preview.
 
-..note:: In case you really want to avoid Esbonio and Sphinx for live preview,
-  you can select DocUtils. Please refer to :doc:`/articles/configuration` for
-  details.
+.. note:: In case you really want to avoid Esbonio and Sphinx for live preview,
+   you can select DocUtils. Please refer to :doc:`/articles/configuration` for
+   details.
 
 #. Install Esbonio by opening a command prompt and running the following Python
    command,
