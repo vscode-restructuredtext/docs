@@ -11,6 +11,9 @@ This extension can detect and launch various linters in the background to scan
 the source files and report back common issues under ``PROBLEMS`` tab (which
 can be opened via ``View | Problems`` menu item).
 
+.. note:: As many linting rules are also available in Esbonio, you don't need
+   to install a specific linter if you don't need its specific features.
+
 Settings
 --------
 To learn more about the settings, refer to :doc:`/articles/configuration`.
@@ -43,7 +46,9 @@ This linter provides enhanced rules. To install it,
 
 .. code-block:: bash
 
-   pip install rstcheck
+   pip install -Iv rstcheck==5.0.0
+
+> rstcheck 6 is includes too many breaking changes, so it is not supported.
 
 Related Resources
 -----------------
