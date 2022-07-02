@@ -5,8 +5,8 @@ By `Lex Li`_
 
 This article shows how live preview works.
 
-Shorcuts
---------
+Shortcuts
+---------
 The keyboard shortcuts are
 
 =========================== ================= ===============
