@@ -48,7 +48,7 @@ This linter provides enhanced rules. To install it,
 
    pip install -Iv rstcheck==5.0.0
 
-> rstcheck 6 is includes too many breaking changes, so it is not supported.
+.. warning:: rstcheck 6 is includes too many breaking changes, so it is not supported.
 
 Related Resources
 -----------------
