@@ -17,11 +17,15 @@ Find The Logs
 -------------
 #. Use "View -> Output" menu item to open Visual Studio Code OUTPUT panel.
 #. On the dropdown list in the upper right area of the OUTPUT panel that says
-   "Search" by default, choose "reStructuredText" from the list to switch to
-   reStructuredText logging page.
+   "Search" by default, choose "reStructuredText" or "Esbonio Language Server"
+   from the list to switch to reStructuredText logging pages.
 
-The logs show what compiler command line is used by this extension and which
-HTML is being previewed. They should indicate what might be wrong.
+The logs show many hidden information, such as
+
+* What compiler command line is used by this extension to execute a Python task
+* Which HTML file is being used as preview.
+
+They should indicate what might be wrong.
 
 Use Developer Tools
 -------------------
