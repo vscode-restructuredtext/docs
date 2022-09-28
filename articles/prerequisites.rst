@@ -41,8 +41,20 @@ advance.
    * Option 3: Use VSCode setting ``python.pythonPath`` to tell this extension
      where to locate Python.
 
-.. important:: Python virtualenv is partially supported, but its setup is
-   complex and not documented here yet. Many issues are expected.
+Virtual Environments
+--------------------
+
+Python virtual environment is partially supported,
+
+   * ``Pipenv`` users should refer to `#407 <https://github.com/vscode-restructuredtext/vscode-restructuredtext/issues/407>`_ 
+   * ``venv`` users should refer to `#409 <https://github.com/vscode-restructuredtext/vscode-restructuredtext/issues/409>`_ 
+   * ``conda`` users should refer to `#410 <https://github.com/vscode-restructuredtext/vscode-restructuredtext/issues/410>`_ 
+
+.. important:: Other sections of this documentation site might use commands
+   such as ``pip install`` which are not virtual environment friendly.
+
+   It is your own responsibility to replace them with virtual environment
+   specific commands such as ``pipenv install`` or ``conda install``.
 
 Install Esbonio Language Server for Live Preview and IntelliSense
 -----------------------------------------------------------------
