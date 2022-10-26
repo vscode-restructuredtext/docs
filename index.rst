@@ -1,4 +1,4 @@
-.. linpeiman documentation master file, created by
+.. documentation master file, created by
    sphinx-quickstart on Sat Dec 19 17:51:25 2015.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -15,7 +15,7 @@ This extension enables reStructuredText related features in Visual Studio Code,
 * Linter
 * IntelliSense
 
-.. note:: To get Syntax Highlighting, please also install `this extension <https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst>`_
+.. note:: To get Syntax Highlighting, you might install `this extension <https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst>`_
    by Trond Snekvik.
 
 .. image:: _static/main.gif
@@ -23,13 +23,16 @@ This extension enables reStructuredText related features in Visual Studio Code,
 
 Getting Started
 ---------------
-Install it from `Visual Studio Code Marketplace <https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext>`_ .
+Install the stable version from `Visual Studio Code Marketplace <https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext>`_ .
 
-#. Upgrade to Visual Studio Code 1.20.0 or above.
+#. Upgrade to Visual Studio Code 1.43.0 or above.
 #. Switch to the Extensions view by clicking the fifth icon in the left most
    bar.
 #. Type "restructuredtext" in the search box and hit Enter key.
 #. Click "Install" button to install "reStructuredText" extension.
+
+.. note:: If you want to stay on the edge, you can install Visual Studio Code
+   Insider and then install the preview version of this extension.
 
 You can go through the follow articles to better understand the various
 features,
