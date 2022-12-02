@@ -31,8 +31,12 @@ sys.path.insert(0, os.path.abspath('_ext'))
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.intersphinx'
+    'sphinx.ext.intersphinx',
+    'sphinx_sitemap'
 ]
+
+html_baseurl = 'https://docs.restructuredtext.net'
+sitemap_url_scheme = '{link}'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
