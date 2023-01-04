@@ -79,7 +79,7 @@ Conf.py Path
 ::::::::::::
 .. important:: For release 68.0.0 and above, this option is maintained
    automatically by the extension in most cases, so you don't need to modify it
-   unless really neccessary.
+   unless really necessary.
 
    The meaning of this setting also changes. Now it stores the active preview
    option for the workspace/folder.
@@ -186,7 +186,7 @@ locations determined by the settings such as
 ``restructuredtext.linter.doc8.executablePath``. Configuring them in workspace
 settings allows users to conveniently select a different set of tools based on
 project's need, but also allows attackers to run arbitrary binaries on your
-machine if they successfuly convince you to open a random repository. In order
+machine if they successfully convince you to open a random repository. In order
 to reduce the security risk, the extension reads those settings from user
 settings by default. If the repository can be trusted and workspace settings
 must be used, you can mark the workspace as a trusted workspace using the
