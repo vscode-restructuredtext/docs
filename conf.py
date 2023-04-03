@@ -397,5 +397,5 @@ def setup(app):
         """Insert Google Analytics tracker
         Based on this Stackoverflow suggestion: https://stackoverflow.com/a/41885884
         """
-        app.add_js_file("https://www.googletagmanager.com/gtag/js?id=UA-1962620-23")
+        app.add_js_file("https://www.googletagmanager.com/gtag/js?id=G-1RXYZ5LSL1")
         app.add_js_file("google_analytics_tracker.js")
