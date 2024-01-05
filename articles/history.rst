@@ -47,7 +47,10 @@ highlighting implemented by Trond Snekvik. Release 159.0.0 completely removed
 syntax highlighiting and recommends Trond's extension [13]_ instead.
 
 Starting from release 170.0.0, the Esbonio language server created by Alex
-Carney [14]_ was integrated. The integration with Snooty was removed.
+Carney [14]_ was integrated. The integration with Snooty was removed. As the
+Esbonio project evolves quickly, this project no longer offers live preview and
+IntelliSense features, but recommends the Esbonio extension to be installed
+instead since release 190.1.17.
 
 There are other contributors helping out with bug reports and pull requests.
 

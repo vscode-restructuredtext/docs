@@ -28,6 +28,10 @@ You can now open a test folder in this debugging instance.
 
 Debugging with Esbonio
 ----------------------
+.. danger:: Starting from version 190.1.17, this feature is removed. You will
+   be recommended to install Esbonio extension instead. To learn more about how
+   to configure Esbonio, you can visit `this site <https://docs.esbon.io>`_.
+
 To debug the language server, clone its source code from GitHub,
 
 .. code-block:: shell

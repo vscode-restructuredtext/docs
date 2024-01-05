@@ -5,6 +5,10 @@ By `Lex Li`_
 
 This article shows what are the supported keyboard shortcuts.
 
+.. danger:: Starting from version 190.1.17, the preview shortcuts are removed.
+   You will be recommended to install Esbonio extension instead. To learn more
+   about how to configure Esbonio, you can visit `this site <https://docs.esbon.io>`_.
+
 The keyboard shortcuts are
 
 =========================== ================= ===============

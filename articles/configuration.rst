@@ -38,6 +38,10 @@ Now this project is opened in Visual Studio Code.
 
 Live Preview
 ------------
+.. danger:: Starting from version 190.1.17, this feature is removed. You will
+   be recommended to install Esbonio extension instead. To learn more about how
+   to configure Esbonio, you can visit `this site <https://docs.esbon.io>`_.
+
 You might tune the following three settings when the extension cannot locate
 the generated HTML pages.
 

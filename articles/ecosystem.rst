@@ -28,6 +28,9 @@ highlighting and section navigation.
 
 Esbonio Language Server
 -----------------------
+.. danger:: Starting from version 190.1.17 of vscode-restructuredtext, this
+   component is replaced by the Esbonio extension.
+
 This is a language server created by Alex Carney that provides the essential
 asset to enable reStructuredText language services,
 
@@ -36,6 +39,26 @@ asset to enable reStructuredText language services,
 * Live preview
 
 It ships as a Python module.
+
+.. important:: vscode-restructuredtext prompts new users to install esbonio so
+   that language services can be enabled.
+
+.. warning:: If more code linting than esbonio is required, users can install
+   individual linters such as doc8, rstcheck, and restructuredtext_lint.
+
+Esbonio Extension for Visual Studio Code
+----------------------------------------
+.. danger:: Starting from version 190.1.17 of vscode-restructuredtext, this
+   component is needed.
+
+This extension is created by Alex Carney that enables reStructuredText language
+services, such as
+
+* Linting
+* Build error detection
+* Live preview
+
+.. note:: Later this extension might be referred to as esbonio.
 
 .. important:: vscode-restructuredtext prompts new users to install esbonio so
    that language services can be enabled.

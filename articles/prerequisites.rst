@@ -58,6 +58,9 @@ Python virtual environment is partially supported,
 
 Install Esbonio Language Server for Live Preview and IntelliSense
 -----------------------------------------------------------------
+.. danger:: Starting from version 190.1.17, this requirement is removed. You
+   will be recommended to install Esbonio extension instead. To learn more
+   about how to configure Esbonio, you can visit `this site <https://docs.esbon.io>`_.
 
 Esbonio language server provides both IntelliSense and live preview
 functionalities, so it must be installed in advance, as
