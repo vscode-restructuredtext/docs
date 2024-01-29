@@ -5,18 +5,20 @@
 
 .. _index:
 
-reStructuredText Extension for Visual Studio Code
-=================================================
-This extension enables reStructuredText related features in Visual Studio Code,
+reStructuredText Ecosystem in Visual Studio Code
+================================================
+Visual Studio Code is a modern code editor for developers and more. To enable very good editing experience for a programming language, the following features are critical and necessary,
 
+* Syntax Highlighting
 * Code Snippets
-* Live Preview
 * Editor Enhancement
 * Linter
 * IntelliSense
+* Live Preview
 
-.. note:: To get Syntax Highlighting, you might install `this extension <https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst>`_
-   by Trond Snekvik.
+In recent years, different extension authors have collaborated to make sure reStructuredText language is well supported in VS Code.
+
+The start is the reStructuredText extension by LeXtudio Inc., which provides the basic features and also prompts to install all other neccessary ones, such as `this extension <https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst>`_ by Trond Snekvik that provides syntax highlighting.
 
 .. image:: _static/main.gif
    :alt: screenshot
@@ -32,7 +34,7 @@ Install the stable version from `Visual Studio Code Marketplace <https://marketp
 #. Click "Install" button to install "reStructuredText" extension.
 
 .. note:: If you want to stay on the edge, you can install Visual Studio Code
-   Insider and then install the preview version of this extension.
+   Insider and then install the prerelease version of this extension.
 
 You can go through the follow articles to better understand the various
 features,
@@ -47,7 +49,7 @@ Frequent Asked Questions can be found `here <https://github.com/vscode-restructu
 
 License
 -------
-This extension is licensed under the MIT License.
+The reStructuredText extension is licensed under the MIT License.
 
 Please see :doc:`/articles/thirdparties` for details on the third-party files
 that we include with releases of this project.
