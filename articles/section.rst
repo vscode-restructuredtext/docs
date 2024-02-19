@@ -19,11 +19,12 @@ This significantly simplifies link creation.
 Section Builder
 ---------------
 Sphinx supports a few underline characters that can be used in section headers,
-such as '=', '-', ':', '.', '\'', '"', '~', '^', '*', '+', and '#'.
+such as ``=``, ``-``, ``:``, ``.``, ``\``, ``"``, ``~``, ``^``, ``*``, ``+``,
+and ``#``.
 
-.. note:: Though '`' and '_' are also valid in Sphinx syntax, the syntax file
-   used by this extension does not work well with them. So these two are not
-   supported by this feature.
+.. note:: Though ````` and ``_`` are also valid in Sphinx syntax, the syntax
+   file used by this extension does not work well with them. So these two are
+   not supported by this feature.
 
 The keyboard shortcuts are,
 
