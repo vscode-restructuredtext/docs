@@ -1,5 +1,6 @@
 {
     "editor.rulers": [
         79
-    ]
+    ],
+    "python.terminal.activateEnvironment": false
 }
