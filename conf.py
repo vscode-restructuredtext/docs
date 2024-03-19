@@ -32,10 +32,11 @@ sys.path.insert(0, os.path.abspath('_ext'))
 # ones.
 extensions = [
     'sphinx.ext.intersphinx',
-    'sphinx_sitemap'
+    'sphinx_sitemap',
+    "sphinx_copybutton",
 ]
 
-html_baseurl = 'https://docs.restructuredtext.net'
+html_baseurl = 'https://docs.lextudio.com/restructuredtext'
 sitemap_url_scheme = '{link}'
 
 # Add any paths that contain templates here, relative to this directory.
@@ -54,7 +55,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'restructuredtext'
-copyright = u'2015, LeXtudio'
+copyright = u'2015-2024, LeXtudio'
 author = u'LeXtudio'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -100,6 +101,7 @@ exclude_patterns = ['_build']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
+pygments_dark_style = "monokai"
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
@@ -120,39 +122,37 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 
-# This allows sphinx_rtd_theme to work locally
-on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
-
-html_context = {
-    'on_rtd' : on_rtd,
-    'display_github': True,
-    'github_user': 'vscode-restructuredtext',
-    'github_repo': 'docs',
-    'github_version': 'master/',
-}
-
-if not on_rtd:
-    import sphinx_rtd_theme
-    html_theme = 'sphinx_rtd_theme'
-    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-
-#def setup(app):
-#    app.add_stylesheet('custom.css?v=1')
-#    app.add_javascript('helpfulness.js')
-
-#html_theme = 'default'
+html_theme = 'furo'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+html_theme_options = {
+    "source_repository": "https://github.com/vscode-restructuredtext/docs",
+    "source_branch": "master",
+    "source_directory": "/",
+    "footer_icons": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/vscode-restructuredtext/docs",
+            "html": "",
+            "class": "fa-brands fa-solid fa-github fa-2x",
+        },
+    ],
+}
+
+html_css_files = [
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
+]
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = "reStructuredText for VS Code Documentation"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -390,6 +390,12 @@ epub_exclude_files = ['search.html']
 #    'mvc': ('http://docs.asp.net/projects/mvc/en/latest', 'mvc.inv'),
 #    'dotnet': ('http://dotnet.readthedocs.org/en/latest', 'dotnet.inv')
 #}
+
+feed_num_items = 15
+feed_skip_regex = '(.)*index'
+feed_base_url = 'https://docs.lextudio.com/restructuredtext/'
+feed_description = 'reStructuredText for VS Code Documentation'
+feed_author = 'LeXtudio Inc.'
 
 def setup(app):
     on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
