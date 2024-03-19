@@ -385,12 +385,6 @@ epub_exclude_files = ['search.html']
 # If false, no index is generated.
 #epub_use_index = True
 
-# Example configuration for intersphinx: refer to the Python standard library.
-#intersphinx_mapping = {
-#    'mvc': ('http://docs.asp.net/projects/mvc/en/latest', 'mvc.inv'),
-#    'dotnet': ('http://dotnet.readthedocs.org/en/latest', 'dotnet.inv')
-#}
-
 feed_num_items = 15
 feed_skip_regex = '(.)*index'
 feed_base_url = 'https://docs.lextudio.com/restructuredtext/'
