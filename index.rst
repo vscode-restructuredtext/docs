@@ -40,11 +40,12 @@ You can go through the follow articles to better understand the various
 features,
 
 .. toctree::
-    :titlesonly:
+   :titlesonly:
 
-    articles/index
-    Support Services <https://support.lextudio.com>
-    privacy
+   Visit Docs Home <https://docs.lextudio.com>
+   articles/index
+   Support Services <https://docs.lextudio.com/support>
+   privacy
 
 Frequent Asked Questions can be found `here <https://github.com/vscode-restructuredtext/vscode-restructuredtext/issues?q=is%3Aissue+label%3A%22faq+candidate%22+>`_.
 
