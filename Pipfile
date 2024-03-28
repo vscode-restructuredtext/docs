@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 sphinx = "*"
 sphinx-copybutton = "*"
-sphinx-sitemap = "*"
+sphinx-sitemap-lextudio = "*"
 furo = "*"
 
 [dev-packages]
