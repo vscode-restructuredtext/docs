@@ -5,17 +5,6 @@ IntelliSense
    be recommended to install Esbonio extension instead. To learn more about how
    to configure Esbonio, you can visit `this site <https://docs.esbon.io>`_.
 
-This feature is enabled by default, though it is still experimental. There is
-no way to disable it at this moment, as you will also lose live preview.
-
-By `Lex Li`_
-
-The Esbonio language server implements many useful features.
-
-.. important:: The Esbonio language server requires the Python package
-   ``esbonio`` to be installed. If it isn't installed yet, this
-   extension will prompt and guide you through the installation.
-
 Autocompletion
 --------------
 The language server enables autocompletion on role/directive names, file paths,

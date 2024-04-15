@@ -11,6 +11,9 @@ advance.
 #. `Download Python <https://www.python.org/downloads/>`_ version 3.8 or above
    (old versions might work, but no guarantee).
 
+   .. note:: ``pyenv`` and ``pyenv-win`` are recommended to manage multiple Python
+      versions on the same machine.
+
    .. note:: You can refer to `Python official page <https://devguide.python.org/devcycle/#end-of-life-branches>`_
       to learn which versions should not be used.
 
@@ -77,39 +80,6 @@ Install Esbonio Language Server for Live Preview and IntelliSense
 .. danger:: Starting from version 190.1.17, this requirement is removed. You
    will be recommended to install Esbonio extension instead. To learn more
    about how to configure Esbonio, you can visit `this site <https://docs.esbon.io>`_.
-
-Esbonio language server provides both IntelliSense and live preview
-functionalities, so it must be installed in advance, as
-rendering engine to generate the HTML page for preview.
-
-.. note:: In case you really want to avoid Esbonio and Sphinx for live preview,
-   you can select DocUtils. Please refer to :doc:`/articles/configuration` for
-   details.
-
-#. Install Esbonio by opening a command prompt and running the following Python
-   command,
-
-   .. code-block:: text
-
-      pip install esbonio
-
-   .. note:: This operation might take a few minutes to complete.
-
-      If you prefer DocUtils based preview, then this step is optional.
-
-   .. note:: Some Sphinx themes require their own Python packages to be
-      installed. You should check the documentation of the themes you use so as
-      to know which packages to install, or the preview error page contains the
-      actual package name which is missing.
-
-#. Install DocUtils by opening a command prompt and running the following Python
-   command,
-
-   .. code-block:: text
-
-      pip install docutils
-
-   .. note:: If you prefer Esbonio based preview, then this step is optional.
 
 Install Doc8 or RstCheck as Linter
 ----------------------------------

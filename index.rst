@@ -9,16 +9,16 @@ reStructuredText Ecosystem in Visual Studio Code
 ================================================
 Visual Studio Code is a modern code editor for developers and more. To enable very good editing experience for a programming language, the following features are critical and necessary,
 
-* Syntax Highlighting
+* Syntax Highlighting (via `dependent extension <https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst>`_ by Trond Snekvik)
 * Code Snippets
 * Editor Enhancement
 * Linter
-* IntelliSense
-* Live Preview
+* IntelliSense (via `dependent extension <https://marketplace.visualstudio.com/items?itemName=swyddfa.esbonio>`_ by Alex Carney)
+* Live Preview (via `dependent extension <https://marketplace.visualstudio.com/items?itemName=swyddfa.esbonio>`_ by Alex Carney)
 
 In recent years, different extension authors have collaborated to make sure reStructuredText language is well supported in VS Code.
 
-The start is the reStructuredText extension by LeXtudio Inc., which provides the basic features and also prompts to install all other neccessary ones, such as `this extension <https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst>`_ by Trond Snekvik that provides syntax highlighting.
+The starting point is the reStructuredText extension by LeXtudio Inc., which provides the basic features and also prompts to install all other necessary ones.
 
 .. image:: _static/main.gif
    :alt: screenshot
@@ -27,7 +27,7 @@ Getting Started
 ---------------
 Install the stable version from `Visual Studio Code Marketplace <https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext>`_ .
 
-#. Upgrade to Visual Studio Code 1.43.0 or above.
+#. Upgrade to Visual Studio Code 1.82.0 or above.
 #. Switch to the Extensions view by clicking the fifth icon in the left most
    bar.
 #. Type "restructuredtext" in the search box and hit Enter key.
