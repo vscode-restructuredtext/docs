@@ -34,7 +34,10 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx_sitemap',
     "sphinx_copybutton",
+    'notfound.extension',
 ]
+
+notfound_urls_prefix = "/restructuredtext/"
 
 html_baseurl = 'https://docs.lextudio.com/restructuredtext'
 sitemap_url_scheme = '{link}'
