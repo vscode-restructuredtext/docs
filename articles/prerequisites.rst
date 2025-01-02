@@ -79,7 +79,7 @@ Install Esbonio Language Server for Live Preview and IntelliSense
 -----------------------------------------------------------------
 .. danger:: Starting from version 190.1.17, this requirement is removed. You
    will be recommended to install Esbonio extension instead. To learn more
-   about how to configure Esbonio, you can visit `this site <https://docs.esbon.io>`_.
+   about how to configure Esbonio, you must visit `this site <https://docs.esbon.io/en/latest/lsp/getting-started.html>`_.
 
 Install Doc8 or RstCheck as Linter
 ----------------------------------
