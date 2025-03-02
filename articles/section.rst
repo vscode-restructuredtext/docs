@@ -46,6 +46,10 @@ characters.
 
 List Editor
 -----------
+
+.. warning:: Due to conflicts with other extensions that take over the TAB key,
+   this feature is temporarily disabled.
+
 The list editor was ported from VSCode Markdown extension, which provides the
 several functionalities to simplify list editing.
 
