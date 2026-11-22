@@ -44,14 +44,20 @@ a section, by adding adornment (underlines below the title text).
 Pressing the shortcut key multiple times switches among the adornment
 characters.
 
+The built-in formatter can also normalize section underline widths and section
+spacing for the whole document or a selection, as described in
+:doc:`/articles/configuration`.
+
 List Editor
 -----------
-
-.. warning:: Due to conflicts with other extensions that take over the TAB key,
-   this feature is temporarily disabled.
-
 The list editor was ported from VSCode Markdown extension, which provides the
 several functionalities to simplify list editing.
+
+``Enter`` and ``Backspace`` are handled for reStructuredText documents, while
+``Tab`` and ``Shift+Tab`` are no longer intercepted so that normal editor
+indentation and suggestions keep working. For IME or other composition-based
+input methods, use the ``reStructuredText: Toggle IME Keybinding Suppression``
+command to temporarily suspend the ``Enter`` and ``Backspace`` handlers.
 
 You can refer to `this page`_ to learn more.
 

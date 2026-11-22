@@ -52,6 +52,11 @@ Esbonio project evolves quickly, this project no longer offers live preview and
 IntelliSense features, but recommends the Esbonio extension to be installed
 instead since release 190.1.17.
 
+Release 190.4.13 added the built-in formatter based on ``rstformat``, raised
+the minimum Python version to 3.11, and updated linter configuration
+discovery. Release 190.4.14 added a bundled Python runtime (Pyodide) so that
+linting and formatting also work in Visual Studio Code for the Web.
+
 There are other contributors helping out with bug reports and pull requests.
 
 .. rubric:: Footnotes

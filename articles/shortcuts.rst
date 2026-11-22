@@ -11,12 +11,17 @@ This article shows what are the supported keyboard shortcuts.
 
 The keyboard shortcuts are
 
-=========================== ================= ===============
-Operation                   Windows/Linux     macOS
-=========================== ================= ===============
-Insert Adornment            ``ctrl+k ctrl+=`` ``cmd+k cmd+=``
-Insert Adornment (Reversed) ``ctrl+k ctrl+-`` ``cmd+k cmd+-``
-=========================== ================= ===============
+=========================== ================== ==================
+Operation                   Windows/Linux      macOS
+=========================== ================== ==================
+Insert Adornment            ``ctrl+k ctrl+=``  ``cmd+k cmd+=``
+Insert Adornment (Reversed) ``ctrl+k ctrl+-``  ``cmd+k cmd+-``
+Format Document             ``shift+alt+f``    ``shift+option+f``
+Toggle IME Suppression      ``ctrl+alt+\``     ``cmd+alt+\``
+=========================== ================== ==================
+
+.. note:: The list editor no longer uses ``Tab`` and ``Shift+Tab``, so those
+   keys keep their normal editor behavior.
 
 Related Resources
 -----------------

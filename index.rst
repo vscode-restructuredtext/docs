@@ -12,9 +12,14 @@ Visual Studio Code is a modern code editor for developers and more. To enable ve
 * Syntax Highlighting (via `dependent extension <https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst>`_ by Trond Snekvik)
 * Code Snippets
 * Editor Enhancement
+* Formatter
 * Linter
 * IntelliSense (via `dependent extension <https://marketplace.visualstudio.com/items?itemName=swyddfa.esbonio>`_ by Alex Carney)
 * Live Preview (via `dependent extension <https://marketplace.visualstudio.com/items?itemName=swyddfa.esbonio>`_ by Alex Carney)
+
+.. note:: Linting and formatting on desktop require Python 3.11 or above.
+   Since release 190.4.14 they are also available in Visual Studio Code for
+   the Web through a bundled Python runtime, without a local installation.
 
 In recent years, different extension authors have collaborated to make sure reStructuredText language is well supported in VS Code.
 

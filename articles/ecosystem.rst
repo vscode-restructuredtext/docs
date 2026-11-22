@@ -16,6 +16,9 @@ best and latest components of the whole ecosystem.
 
 .. note:: Later this extension might be referred to as vscode-restructuredtext.
 
+.. note:: Since release 190.4.14, linting and formatting are also available in
+   Visual Studio Code for the Web through a bundled Python runtime.
+
 reStructuredText Syntax Highlighting
 ------------------------------------
 This is an extension created by Trond Snekvik, which focuses on syntax

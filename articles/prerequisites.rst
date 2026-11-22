@@ -6,10 +6,14 @@ Install Python for Most Features
 --------------------------------
 reStructuredText is a technology created by Python community, so most of the
 toolchain is built upon Python. It is very important to install Python in
-advance.
+advance on desktop.
 
-#. `Download Python <https://www.python.org/downloads/>`_ version 3.8 or above
-   (old versions might work, but no guarantee).
+.. note:: Visual Studio Code for the Web does not need a local Python
+   installation. Linting and formatting are provided by a Python runtime
+   bundled with this extension.
+
+#. `Download Python <https://www.python.org/downloads/>`_ version 3.11 or above.
+   Older versions are no longer supported.
 
    .. note:: ``pyenv`` and ``pyenv-win`` are recommended to manage multiple Python
       versions on the same machine.
@@ -21,7 +25,8 @@ advance.
       `this article <https://docs.readthedocs.io/en/latest/getting_started.html#in-rst>`_.
 
 #. Once Python is installed, make it available to this extension via either
-   option,
+   option. After changing the selected interpreter, reload the Visual Studio
+   Code window so that this extension can detect the new version.
 
    * Option 1: Use `the Python extension by Microsoft <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_.
 
@@ -40,8 +45,8 @@ advance.
         directory and the Python scripts directory have been added to your
         ``PATH`` environment variable.
         
-        For example, if you install Python into the ``c:\python38`` directory,
-        you can add ``c:\python38;c:\python38\scripts`` to your ``PATH``
+        For example, if you install Python into the ``c:\python311`` directory,
+        you can add ``c:\python311;c:\python311\scripts`` to your ``PATH``
         environment variable.
 
         However, do consider a solution like ``pyenv`` to manage multiple
@@ -81,6 +86,17 @@ Install Esbonio Language Server for Live Preview and IntelliSense
    will be recommended to install Esbonio extension instead. To learn more
    about how to configure Esbonio, you must visit `this site <https://docs.esbon.io/en/latest/lsp/getting-started.html>`_.
 
+Install rstformat for Formatter
+-------------------------------
+Formatter support uses the ``rstformat`` command-line tool.
+
+.. code-block:: text
+
+   pip install rstformat
+
+.. note:: In Visual Studio Code for the Web, ``rstformat`` is bundled and no
+   installation is needed.
+
 Install Doc8 or RstCheck as Linter
 ----------------------------------
 Linting support can use the ``doc8`` or ``rstcheck`` engine.
@@ -100,6 +116,9 @@ Linting support can use the ``doc8`` or ``rstcheck`` engine.
       pip install rstcheck
 
    .. note:: If you prefer not to use ``rstcheck``, then this step is optional.
+
+.. note:: In Visual Studio Code for the Web, ``doc8``, ``rstcheck``, and
+   ``rst-lint`` are bundled and no installation is needed.
 
 Related Resources
 -----------------

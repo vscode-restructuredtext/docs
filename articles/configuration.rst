@@ -50,6 +50,9 @@ Linting is automatically enabled if the linters are installed. The linters
 scan the opened files and highlight those lines with issues detected. The
 PROBLEMS tab should also show all issues detected for easy navigation.
 
+Linter processes run from the document's directory, so tool configuration such
+as ``pyproject.toml`` or ``doc8.ini`` is discovered next to the document.
+
 Executable Path
 :::::::::::::::
 To override automatic detection of linter modules, the following settings can
@@ -68,6 +71,9 @@ be used,
 .. attention:: Linters can be disabled via the new setting,
    ``restructuredtext.linter.disabledLinters``.
 
+.. attention:: Upgrade or install recommendations for linter tools can be
+   disabled via ``restructuredtext.linter.installRecommendation.disabled``.
+
 .. attention:: Old settings below are obsolete since release 178.0.0,
 
    * ``restructuredtext.linter.disabled``
@@ -77,10 +83,9 @@ be used,
 
 Lint onType or onSave or not at all
 :::::::::::::::::::::::::::::::::::
-By default the linter will lint on the fly but can be changed to linting as
-you save. Note that linting on save is most useful when auto-save is on. Use
-the setting below if to change the behavior with the values onType, onSave,
-and off,
+By default the linter runs as you type but can be changed to linting as you
+save. Note that linting on save is most useful when auto-save is on. Use the
+setting below to change the behavior with the values onType, onSave, and off,
 
 .. code-block:: json
 
@@ -107,6 +112,43 @@ Specify the location of the ini file in ``settings.json`` as extra args.
     }
 
 .. note:: This should be an absolute path.
+
+Formatter
+---------
+Formatting is based on ``rstformat``. It can format the whole document or the
+current selection. On desktop it requires Python 3.11 or above and
+``rstformat`` installed as described in :doc:`/articles/prerequisites`; in
+Visual Studio Code for the Web it is bundled.
+
+Use the ``Format Document`` or ``Format Selection`` command, or the default
+``Shift+Alt+F`` (Windows/Linux) / ``Shift+Option+F`` (macOS) shortcut.
+
+Formatter Settings
+::::::::::::::::::
+The following settings control formatting,
+
+.. code-block:: json
+
+    {
+        "restructuredtext.formatter.normalizeSectionUnderlines": true,
+        "restructuredtext.formatter.normalizeSectionSpacing": true,
+        "restructuredtext.formatter.trimTrailingWhitespace": true,
+        "restructuredtext.formatter.maxConsecutiveBlankLines": 2
+    }
+
+``normalizeSectionUnderlines`` adjusts section underline and overline widths to
+the title text. ``normalizeSectionSpacing`` inserts a blank line before and
+after section titles when needed. ``trimTrailingWhitespace`` removes trailing
+spaces and tabs. ``maxConsecutiveBlankLines`` limits how many consecutive
+blank lines are preserved.
+
+Visual Studio Code for the Web
+------------------------------
+Since release 190.4.14, linting and formatting are available in Visual Studio
+Code for the Web through a Python runtime bundled with this extension. Local
+Python installations, linter executable paths, and ``pip install`` commands do
+not apply in that environment; bundled tools are updated together with the
+extension.
 
 Security
 --------

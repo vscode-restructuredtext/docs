@@ -14,6 +14,10 @@ can be opened via ``View | Problems`` menu item).
 .. note:: As many linting rules are also available in Esbonio, you don't need
    to install a specific linter if you don't need its specific features.
 
+.. note:: In Visual Studio Code for the Web, the supported linters and their
+   Python dependencies are bundled with this extension. No installation is
+   needed, and executable path settings are ignored.
+
 Settings
 --------
 To learn more about the settings, refer to :doc:`/articles/configuration`.
@@ -46,9 +50,11 @@ This linter provides enhanced rules. To install it,
 
 .. code-block:: bash
 
-   pip install -Iv rstcheck==5.0.0
+   pip install rstcheck
 
-.. warning:: rstcheck 6 is includes too many breaking changes, so it is not supported.
+.. note:: When an unsupported version is detected, this extension suggests the
+   corresponding upgrade command. To disable those recommendations, set
+   ``restructuredtext.linter.installRecommendation.disabled`` to ``true``.
 
 Related Resources
 -----------------

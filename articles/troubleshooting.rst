@@ -27,6 +27,26 @@ The logs show many hidden information, such as
 
 They should indicate what might be wrong.
 
+Python Version
+--------------
+If the output says ``Python X.Y is not supported``, install Python 3.11 or
+above, select it with the Python extension, and reload the Visual Studio Code
+window. Linting and formatting are disabled while an unsupported interpreter is
+selected.
+
+Visual Studio Code for the Web
+------------------------------
+In Visual Studio Code for the Web, the first formatting or linting request
+loads the bundled Python runtime. A status bar message indicates when the
+runtime is being loaded. Local Python installations and linter executable paths
+are not used there.
+
+Linter Configuration
+--------------------
+Linter processes run from the document's directory. If a linter configuration
+file such as ``pyproject.toml`` or ``doc8.ini`` is not applied, verify that it
+is next to the document or in a parent directory of it.
+
 Use Developer Tools
 -------------------
 In rare cases you need to use ``Help | Toggle Developer Tools`` menu item to
