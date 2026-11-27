@@ -153,15 +153,15 @@ extension.
 Security
 --------
 This extension runs a few third-party command-line tools found from the
-locations determined by the settings such as
+locations determined by settings such as
 ``restructuredtext.linter.doc8.executablePath``. Configuring them in workspace
 settings allows users to conveniently select a different set of tools based on
-project's need, but also allows attackers to run arbitrary binaries on your
-machine if they successfully convince you to open a random repository. In order
-to reduce the security risk, the extension reads those settings from user
-settings by default. If the repository can be trusted and workspace settings
-must be used, you can mark the workspace as a trusted workspace using the
-"reStructuredText: Toggle Workspace Trust Flag" command.
+a project's needs, but also allows attackers to run arbitrary binaries on your
+machine if they convince you to open a random repository. The extension
+declares that it is not supported in untrusted workspaces, so Visual Studio
+Code disables it in Restricted Mode. To use workspace or folder-level tool
+paths, trust the workspace through Visual Studio Code's Workspace Trust
+interface.
 
 Related Resources
 -----------------
